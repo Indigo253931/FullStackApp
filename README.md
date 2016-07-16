@@ -21,5 +21,5 @@ Approach taken:
 
 Installation instructions:
 
-Unsolved problems
+Unsolved problems:
 
