@@ -11,11 +11,11 @@ Technologies used:
 
 -CSS
 
--ERB
+-ERB (Embedded RuBy to generate text from templates. The templates combine plain text with Ruby code for variable substitution and flow control).
 
 -SQL
 
--ActiveRecord for database table structure and interaction with relationally-stored data
+-ActiveRecord (for database table structure and interaction with relationally-stored data).
 
 Approach taken:
 
