@@ -19,7 +19,7 @@ DELETE - Users will be able to delete their ratings and reviews
 
 Trello board: https://trello.com/b/4pKjpKsB/project-2-a-full-stack-application
 
-Wireframes:
+Wireframes: https://github.com/Indigo253931/FullStackApp/tree/master/Wireframes
 
 Technologies used: 
 
