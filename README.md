@@ -1,11 +1,8 @@
 # FullStackApp
 Project 2
 
-App description: My app will allow users to create, read, update and delete ratings and reviews for cannabis strains and dispensaries.
+App description: My app will allow users to create, read, update and delete ratings and reviews for cannabis strains.
 
-
-Front-end - 
-Back-end - 
 
 4 routes: 
 
@@ -35,6 +32,14 @@ Technologies used:
 
 
 Approach taken:
+
+
+Front-end - 
+
+
+Back-end - 
+
+
 
 Installation instructions:
 
