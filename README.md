@@ -1,6 +1,11 @@
 # FullStackApp
 Project 2
 
+Trello board: https://trello.com/b/4pKjpKsB/project-2-a-full-stack-application
+
+Wireframes: https://github.com/Indigo253931/FullStackApp/tree/master/Wireframes
+
+
 App description: My app allows users to CRUD cannabis strains in addition to ratings and reviews.
 
 
@@ -14,9 +19,6 @@ PUT: Users can update their strains, ratings reviews.
 
 DELETE: Users can delete their strains, ratings and reviews.
 
-Trello board: https://trello.com/b/4pKjpKsB/project-2-a-full-stack-application
-
-Wireframes: https://github.com/Indigo253931/FullStackApp/tree/master/Wireframes
 
 Technologies used: 
 
