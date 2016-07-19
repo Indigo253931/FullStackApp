@@ -24,7 +24,7 @@ Technologies used:
 
 -CSS
 
--ERB (Embedded RuBy to generate text from templates. The templates combine plain text with Ruby code for variable substitution and flow control).
+-ERB: Use Embedded RuBy to generate text from templates. The templates combine plain text with Ruby code for variable substitution and flow control. Templates are to be kept in the folder 'views'.
 
 -SQL
 
@@ -40,6 +40,31 @@ Front-end:
 Back-end: 
 
 Installation instructions:
+
+1. Create a Gemfile by running 'bundle init'. 
+Inside the file, include the following: 
+
+source "https://rubygems.org"
+gem "sinatra"
+gem 'rerun'
+
+Then run the command 'bundle install' or 'bundle'.
+
+2. Create a 'config.ru' file to configure the Rack server. and inside include the following: 
+
+ruby
+require 'rubygems'
+require 'bundler'
+Bundler.require
+require './app'
+run App
+
+
+3. Create a file named app.rb and inside include the following: 
+
+ruby
+class App < Sinatra::Base
+end
 
 Unsolved problems:
 

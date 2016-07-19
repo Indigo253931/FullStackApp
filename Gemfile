@@ -6,3 +6,4 @@
  gem 'pg', '~>0.18.2'
  gem 'tux', '~>0.3.0'
  gem 'rake'
+ gem 'rerun'

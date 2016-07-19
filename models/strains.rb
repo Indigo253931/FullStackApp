@@ -1,2 +1,4 @@
-# class Model < ActiveRecord::Base
-# end
+ class Strain < ActiveRecord::Base
+ 	
+ end
+

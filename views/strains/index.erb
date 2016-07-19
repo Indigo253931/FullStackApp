@@ -1,0 +1,30 @@
+<h1>Strains</h1>
+<a class="btn" href="/strains/new">Add Strain</a>
+
+<div class="strains">
+  <% @strains.each do |strain| %>
+  <div class="row">
+    <ul>
+      <li>
+        <h2>
+          <a href="/strains/<%= strain.id %>">
+            <%= strain.name %>
+          </a>
+        </h2>
+      </li>
+      <li>
+        <a href="/strains/<%= strain.id %>/edit">
+          Edit
+        </a>
+      </li>
+      <li>
+        <li>
+          <form method="/strains/<%= strain.id %>/delete" action="post">
+            <button>Delete</button>
+          </form>
+        </li>
+      </li>
+    </ul>
+  </div>
+  <% end %>
+</div>

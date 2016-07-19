@@ -1,12 +1,4 @@
- require 'sinatra'
-
- get '/' do 
- 	erb :index
- end
-
 #STRAINS
-
-@@strains = [{"name" => "Strawberry Nightmare", type => "Sativa", Rating => "3.5", Review =>"Fruity taste, creativity and perspective"}]
 
 # index
  get '/strains' do 
@@ -30,7 +22,7 @@
  	end
  end
 
- # show
+  # show
  get '/strains/:id' do 
  	@strain = Strain.find(params[:id])
  	erb(:"strains/show")
@@ -43,9 +35,8 @@ get '/strains/:id/edit' do
 end
 
 # update
-put '/strains/:id' do
-	@strain = Strain.find(params[:id])
-	if @strain.update_attributes(params[:strain])
+put '/strains/:id' do@strain = Strain.find(params[:id])
+	@strain.update_attributes(params[:strain])
 	redirect("/strains/#{strain.id}")
 else 
 	erb(:"strains/edit")
@@ -55,13 +46,12 @@ end
 # delete
 delete '/strains/:id/delete' do 
 	@strain = Strain.find(params[:id])
-	if @strain.destroy
+	id @strain.destroy
 	redirect('/strains')
 else
 	redirect("/strains/#{@strain.id}")
 end
-#end
 end
-
+end
 
 
