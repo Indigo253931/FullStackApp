@@ -35,8 +35,8 @@ get '/strains/:id/edit' do
 end
 
 # update
-put '/strains/:id' do@strain = Strain.find(params[:id])
-	@strain.update_attributes(params[:strain])
+put '/strains/:id' do @strain = Strain.find(params[:id])
+	if @strain.update_attributes(params[:strain])
 	redirect("/strains/#{strain.id}")
 else 
 	erb(:"strains/edit")
@@ -46,11 +46,10 @@ end
 # delete
 delete '/strains/:id/delete' do 
 	@strain = Strain.find(params[:id])
-	id @strain.destroy
+	if id @strain.destroy
 	redirect('/strains')
 else
 	redirect("/strains/#{@strain.id}")
-end
 end
 end
 

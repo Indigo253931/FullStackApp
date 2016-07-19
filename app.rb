@@ -1,64 +1,57 @@
- require 'sinatra'
+ class CannaViews < Sinatra::Base
 
+ # General route action
  get '/' do 
  	erb :index
  end
 
-#STRAINS
-STRAINS
-class Strain
-def initialize (name, type, rating, review)
-	@strain_name = name
-	@strain_type = type
-	@strain_rating = rating
-	@strain_review = review
-end
-def details()
-	puts "Strain name #@strain_name"
-	puts "Strain type #@strain_type"
-	puts "Strain rating #@strain_rating"
-	puts "Strain review #@strain_review"
-end
-end
+get '/layout' do 
+ 	erb :layout
+ end
 
+ # RESTful Strain Controller Actions
 
-StrawberryNightmare = Strain.new("Strawberry Nightmare", "Sativa", "4", "Best for daytime use, a favorite fruity strain"}]
-
-# index
+# INDEX
  get '/strains' do 
  	@strains = Strain.all 
  	erb(:"strains/index")
  end
 
- # new
+# Return a collection with all strains
+#strains = Strain.all
+
+ # NEW
  get '/strains/new' do
  	@strain = Strain.new
  	erb(:"strains/new")
  end
 
- # create
+ # CREATE
  post '/strains' do 
  	@strain = Strain.new(params[:strain])
  	if @strain.save
- 		redirect("/strains/{@strain.id}")
+ 		redirect("/strains/#{@strain.id}")
  	else
  		erb(:"strains/new")
- 	end
+ 	end  	
  end
+	
+# Create and save a new strain
+#StrwNghtmre = Strain.create(name: "Strawberryy Nightmare", rating: "4", review: "Best for daytime use, a favorite fruity strain")
 
- # show
+ # SHOW
  get '/strains/:id' do 
  	@strain = Strain.find(params[:id])
  	erb(:"strains/show")
  end
 
- # edit
+ # EDIT
 get '/strains/:id/edit' do
 	@strain = Strain.find(params[:id])
 	erb(:"strains/edit")
 end
 
-# update
+# UPDATE
 put '/strains/:id' do
 	@strain = Strain.find(params[:id])
 	if @strain.update_attributes(params[:strain])
@@ -68,7 +61,11 @@ else
 end
 end
 
-# delete
+# Return first strain named Strawberrry Nightmare
+#strain = Strain.find_by(name: 'Strawberrry Nightmare')
+#strain.update(name: 'Strawberry Nightmare')
+
+# DELETE
 delete '/strains/:id/delete' do 
 	@strain = Strain.find(params[:id])
 	if @strain.destroy
@@ -76,8 +73,28 @@ delete '/strains/:id/delete' do
 else
 	redirect("/strains/#{@strain.id}")
 end
-#end
 end
+
+# Use hash mapping attribute to modify & save to database
+#strain = Strain.find_by(name: '')
+#strain.delete
+
+end
+
+#STRAINS
+#class Strain
+#def initialize (name, type, rating, review)
+#	@strain_type = type
+#	@strain_rating = rating
+#	@strain_review = review
+#end
+#def details()
+#	puts "Strain name #@strain_name"
+#	puts "Strain type #@strain_type"
+#	puts "Strain rating #@strain_rating"
+#	puts "Strain review #@strain_review"
+#end
+#end
 
 
 

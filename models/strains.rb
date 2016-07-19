@@ -1,4 +1,4 @@
- class Strain < ActiveRecord::Base
+class Strain < ActiveRecord::Base
  	
  end
 
