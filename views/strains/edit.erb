@@ -2,13 +2,13 @@
 
 <form action='/strains/<%= "#{@strain.id}" %>' method="post">
   <label for="strain[name]">Name:</label>
-  <input name="strain[name]" value='<%= "#{@strain.name}" %>'>
-
-  <label for="strain[kind]">Kind:</label>
-  <input name="strain[kind]" value='<%= "#{@strain.kind}" %>'>
+  <input name="strain[name]" value='<%= "#{@strain.name}" %>'>ß
 
   <label for="strain[rating]">Rating:</label>
   <input name="strain[rating]" value='<%= "#{@strain.rating}" %>'>
+
+  <label for="strain[kind]">Kind:</label>
+  <input name="strain[kind]" value='<%= "#{@strain.kind}" %>'>
 
   <label for="strain[review]">Review:</label>
   <input name="strain[review]" value='<%= "#{@strain.review}" %>'>
@@ -17,6 +17,6 @@
 
   <input type="submit" value="Save">
 
-  
+
  
 </form>

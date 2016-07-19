@@ -12,28 +12,30 @@
         </h2>
   
     
-     <div><a href="/strains/<%= strain.id %>/edit">
+     <div>
+        <a href="/strains/<%= strain.id %>/edit">
           <button>Edit</button>
-        </a></div>
+        </a>
+      </div>
 
           <div>
            <form method="post" action="/strains/<%= strain.id %>"> 
            <input name="_method" type="hidden" value='delete'>
           <input type="submit" value="Delete">
           </form>
-
           </div>
 
 
          <ul>
+          <li>
+            <%= strain.rating %>
+       
+            </li>
          <li>
             <%= strain.kind %>
        
             </li>
-            <li>
-            <%= strain.rating %>
-       
-            </li>
+           
             <li>
             <%= strain.review %>
        
