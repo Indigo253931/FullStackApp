@@ -35,7 +35,8 @@ get '/strains/:id/edit' do
 end
 
 # update
-put '/strains/:id' do @strain = Strain.find(params[:id])
+put '/strains/:id' do 
+	@strain = Strain.find(params[:id])
 	if @strain.update_attributes(params[:strain])
 	redirect("/strains/#{strain.id}")
 else 

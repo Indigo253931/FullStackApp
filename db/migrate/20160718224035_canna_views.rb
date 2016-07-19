@@ -8,5 +8,4 @@ class CannaViews < ActiveRecord::Migration
   end
   end
 
-#rename_column :strains, :type, :kind
 end

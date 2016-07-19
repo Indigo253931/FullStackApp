@@ -28,7 +28,7 @@ get '/layout' do
 
  # CREATE
  post '/strains' do 
- 	@strain = Strain.new(params[:strain])
+ 	@strain = Strain.new(params[:id])
  	if @strain.save
  		redirect("/strains/#{@strain.id}")
  	else

@@ -10,6 +10,7 @@
           <a href="/strains/<%= strain.id %>">
             <%= strain.name %>
           </a>
+          </a>
         </h2>
       </li>
       <li>
@@ -18,11 +19,23 @@
         </a>
       </li>
       <li>
+            <%= strain.kind %>
+       
+            </li>
+            <li>
+            <%= strain.rating %>
+       
+            </li>
+            <li>
+            <%= strain.review %>
+       
+            </li>
+      
         <li>
           <form method="/strains/<%= strain.id %>/delete" action="post">
             <button>Delete</button>
           </form>
-        </li>
+        
       </li>
     </ul>
   </div>

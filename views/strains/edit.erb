@@ -1,11 +1,11 @@
-<h1>Edit strain</h1>
+<h1>Edit Strain</h1>
 
 <form action='/strains/<%= "#{@strain.id}" %>' method="post">
   <label for="strain[name]">Name:</label>
   <input name="strain[name]" value='<%= "#{@strain.name}" %>'>
 
-  <label for="strain[type]">Typ:</label>
-  <input name="strain[type]" value='<%= "#{@strain.type}" %>'>
+  <label for="strain[kind]">Kind:</label>
+  <input name="strain[kind]" value='<%= "#{@strain.kind}" %>'>
 
   <label for="strain[rating]">Rating:</label>
   <input name="strain[rating]" value='<%= "#{@strain.rating}" %>'>
@@ -13,5 +13,10 @@
   <label for="strain[review]">Review:</label>
   <input name="strain[review]" value='<%= "#{@strain.review}" %>'>
 
-  <input type="submit" value="Create">
+
+  <input type="submit" value="Save">
+    <form method="/strains/<%= strain.id %>/delete" action="post">
+            <button>Delete</button>
+          </form>
+  <input type="submit" value="Delete">
 </form>
