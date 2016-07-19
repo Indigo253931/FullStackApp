@@ -16,7 +16,7 @@
  post '/strains' do 
  	@strain = Strain.new(params[:strain])
  	if @strain.save
- 		redirect("/strains/{@strain.id}")
+ 		redirect("/strains/#{@strain.id}")
  	else
  		erb(:"strains/new")
  	end
@@ -38,20 +38,19 @@ end
 put '/strains/:id' do 
 	@strain = Strain.find(params[:id])
 	if @strain.update_attributes(params[:strain])
-	redirect("/strains/#{strain.id}")
+	redirect("/strains/#{@strain.id}")
 else 
 	erb(:"strains/edit")
 end
 end
 
 # delete
-delete '/strains/:id/delete' do 
+delete '/strains/:id' do 
 	@strain = Strain.find(params[:id])
-	if id @strain.destroy
+	if @strain.destroy
 	redirect('/strains')
 else
 	redirect("/strains/#{@strain.id}")
 end
 end
-
 

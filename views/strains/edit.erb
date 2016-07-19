@@ -13,10 +13,10 @@
   <label for="strain[review]">Review:</label>
   <input name="strain[review]" value='<%= "#{@strain.review}" %>'>
 
+<input name="_method" type="hidden" value='put'>
 
   <input type="submit" value="Save">
-    <form method="/strains/<%= strain.id %>/delete" action="post">
-            <button>Delete</button>
-          </form>
-  <input type="submit" value="Delete">
+
+  
+ 
 </form>
