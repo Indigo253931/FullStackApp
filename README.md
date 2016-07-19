@@ -31,14 +31,6 @@ Technologies used:
 -ActiveRecord for database table structure and interaction with relationally-stored data.
 
 
-Approach taken:
-
-
-Front-end: 
-
-
-Back-end: 
-
 Installation instructions:
 
 1. Create a Gemfile by running 'bundle init'. 
