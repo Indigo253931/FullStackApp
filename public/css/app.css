@@ -30,6 +30,13 @@ a {
 	font-weight: lighter;
 }
 
+
+a.btn {
+	text-align: center;
+	font-family: "Big Caslon";
+	font-weight: lighter;
+}
+
 ul {
 	text-align: center;
 	font-family: "Big Caslon";
