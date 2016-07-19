@@ -5,8 +5,24 @@
  end
 
 #STRAINS
+STRAINS
+class Strain
+def initialize (name, type, rating, review)
+	@strain_name = name
+	@strain_type = type
+	@strain_rating = rating
+	@strain_review = review
+end
+def details()
+	puts "Strain name #@strain_name"
+	puts "Strain type #@strain_type"
+	puts "Strain rating #@strain_rating"
+	puts "Strain review #@strain_review"
+end
+end
 
-@@strains = [{"name" => "Strawberry Nightmare", type => "Sativa", Rating => "3.5", Review =>"Fruity taste, creativity and perspective"}]
+
+StrawberryNightmare = Strain.new("Strawberry Nightmare", "Sativa", "4", "Best for daytime use, a favorite fruity strain"}]
 
 # index
  get '/strains' do 
