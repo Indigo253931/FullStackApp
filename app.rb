@@ -66,7 +66,7 @@ end
 #strain.update(name: 'Strawberry Nightmare')
 
 # DELETE
-delete '/strains/:id/delete' do 
+delete '/strains/:id' do 
 	@strain = Strain.find(params[:id])
 	if @strain.destroy
 	redirect('/strains')
