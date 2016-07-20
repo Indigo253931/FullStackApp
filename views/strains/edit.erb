@@ -2,16 +2,16 @@
 
 <form action='/strains/<%= "#{@strain.id}" %>' method="post">
   <label class = "edit_form_input" for="strain[name]">Name:</label>
-  <input class = "edit_form_input" name="strain[name]" value='<%= "#{@strain.name}" %>'>
+  <input class = "edit_form_input" name="strain[name]" placeholder="Mango Kush" value='<%= "#{@strain.name}" %>'>
 
   <label class = "edit_form_input" for="strain[rating]">Rating:</label>
-  <input class = "edit_form_input" name="strain[rating]" value='<%= "#{@strain.rating}" %>'>
+  <input class = "edit_form_input" name="strain[rating]" placeholder="4.5" value='<%= "#{@strain.rating}" %>'>
 
   <label class = "edit_form_input" for="strain[kind]">Kind:</label>
-  <input class = "edit_form_input" name="strain[kind]" value='<%= "#{@strain.kind}" %>'>
+  <input class = "edit_form_input" name="strain[kind]" placeholder="Hybrid" value='<%= "#{@strain.kind}" %>'>
 
   <label class = "edit_form_input" for="strain[review]">Review:</label>
-  <input class = "edit_form_input" name="strain[review]" value='<%= "#{@strain.review}" %>'>
+  <input class = "edit_form_input" name="strain[review]" placeholder="High density with fruity flavors. Perfect for relaxing." value='<%= "#{@strain.review}" %>'>
 
 <input name="_method" type="hidden" value='put'>
 
