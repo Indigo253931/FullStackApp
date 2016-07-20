@@ -1,5 +1,4 @@
 # FullStackApp
-Project 2
 
 Heroku: https://fierce-headland-62439.herokuapp.com/
 
