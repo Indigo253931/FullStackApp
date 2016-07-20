@@ -1,5 +1,5 @@
 body{
-	background-image: url('/images/Untitled89-Steven Sandner.jpg');
+	background-image: url('/images/Blueberry Yum Yum.png');
 	background-size: cover;
 	}
 
@@ -23,6 +23,7 @@ h1:hover {
 h2:hover {
 	color: white;
 }
+
 h2  {
 	text-align: center;
 	font-family: "Big Caslon";
@@ -33,6 +34,7 @@ h2  {
 h3:hover {
 	color: white;
 }
+
 h3  {
 	text-align: center;
 	font-family: "Big Caslon";
@@ -70,9 +72,13 @@ li {
 	font-size: 45px;
 	}
 
+	li:hover {
+		color: orange;
+	}
+
 
 a:hover {
-    opacity: 0.8;
+    color: green;
 	}
 
 a 	{
@@ -92,7 +98,8 @@ a 	{
 	}
 
 	#strain_name:hover {
-	color: white;
+	color: black;
+	display: block;
 	}
 
 #edit_button {
@@ -109,12 +116,14 @@ a 	{
 .strain_list {
 	border-radius:10px;
 	display: block;
-	opacity: 0.7;
+	opacity: 0.6;
 	border-radius:10px;
+	background-color: white;
 }
 
 .strain_list:hover {
-	color: white;
+	color: black;
+	opacity: 0.8;
 }
 .btn {
 		text-align: center;
