@@ -1,17 +1,17 @@
 <h1>Edit Strain</h1>
 
 <form action='/strains/<%= "#{@strain.id}" %>' method="post">
-  <label class = "edit_form_input" for="strain[name]">Name:</label>
+  <label for="strain[name]">Name:</label>
   <input class = "edit_form_input" name="strain[name]" placeholder="Mango Kush" value='<%= "#{@strain.name}" %>'>
 
-  <label class = "edit_form_input" for="strain[rating]">Rating:</label>
+  <label for="strain[rating]">Rating:</label>
   <input class = "edit_form_input" name="strain[rating]" placeholder="4.5" value='<%= "#{@strain.rating}" %>'>
 
-  <label class = "edit_form_input" for="strain[kind]">Kind:</label>
+  <label for="strain[kind]">Kind:</label>
   <input class = "edit_form_input" name="strain[kind]" placeholder="Hybrid" value='<%= "#{@strain.kind}" %>'>
 
-  <label class = "edit_form_input" for="strain[review]">Review:</label>
-  <input class = "edit_form_input" name="strain[review]" placeholder="High density with fruity flavors. Perfect for relaxing." value='<%= "#{@strain.review}" %>'>
+  <label for="strain[review]">Review:</label>
+  <input class = "edit_form_input" name="strain[review]" placeholder="Top quality" value='<%= "#{@strain.review}" %>'>
 
 <input name="_method" type="hidden" value='put'>
 

@@ -1,17 +1,19 @@
+<div id ="new_strain_title">
 <h1>New Strain</h1>
+</div>
 
 <form action="/strains" method="post">
   <label for="strain[name]">Name:</label>
-  <input name="strain[name]">
+  <input class = "edit_form_input" name="strain[name]" placeholder="Mango Kush">
 
   <label for="strain[rating]">Rating:</label>
-  <input name="strain[rating]">
+  <input class = "edit_form_input" name="strain[rating]" placeholder="4.5">
 
    <label for="strain[kind]">Kind:</label>
-  <input name="strain[kind]">
+  <input class = "edit_form_input" name="strain[kind]" placeholder="Hybrid">
 
   <label for="strain[review]">Review:</label>
-  <input name="strain[review]">
+  <input class = "edit_form_input" name="strain[review]" placeholder="Top quality">
 
-  <input type="submit" value="Create">
+  <input id = "save_btn" class = "edit_form_input" type="submit" value="Create">
 </form>

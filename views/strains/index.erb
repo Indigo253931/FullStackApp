@@ -5,13 +5,17 @@
   <% @strains.each do |strain| %>
   <div class="row">
     
-        <h2 class = "strain_name">
+        <div class ="strain_list">
+
+         <h2 class = "strain_name">
           <a href="/strains/<%= strain.id %>">
             <%= strain.name %>
           </a>
         </h2>
 
-         <ul>
+        
+          <ul>
+
           <li>
             <%= strain.rating %>
        
@@ -27,6 +31,7 @@
             </li>
 
     </ul>
+    </div>
   </div>
   <% end %>
 </div>
