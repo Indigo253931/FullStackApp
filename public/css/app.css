@@ -5,7 +5,8 @@ background-size: cover;
 opacity: 0.8;
 	}
 
-	.btn {
+	a.btn {
+		text-align: center;
 	
 	}
 
@@ -15,7 +16,7 @@ opacity: 0.8;
 	font-size: 80px;
 	font-family: "Big Caslon";
 	font-weight: lighter;
-	opacity: 0.8;
+	opacity: 0.9;
 	
 }
 
@@ -72,18 +73,19 @@ form {
 	text-align: center;
 	font-family: "Big Caslon";
 	font-weight: lighter;
+	display: block;
 }
 
 label {
 	font-size: 40px;
 	font-family: "Big Caslon";
 	font-weight: lighter;
+	text-align: center;
 }
 
 input {
 	width: 100px;
 	height: 15px;
 	text-align: center;
-
 
 }
