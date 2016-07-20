@@ -1,17 +1,17 @@
 <h1>Edit Strain</h1>
 
 <form action='/strains/<%= "#{@strain.id}" %>' method="post">
-  <label for="strain[name]">Name:</label>
-  <input name="strain[name]" value='<%= "#{@strain.name}" %>'>
+  <label class = "edit_form_input" for="strain[name]">Name:</label>
+  <input class = "edit_form_input" name="strain[name]" value='<%= "#{@strain.name}" %>'>
 
-  <label for="strain[rating]">Rating:</label>
-  <input name="strain[rating]" value='<%= "#{@strain.rating}" %>'>
+  <label class = "edit_form_input" for="strain[rating]">Rating:</label>
+  <input class = "edit_form_input" name="strain[rating]" value='<%= "#{@strain.rating}" %>'>
 
-  <label for="strain[kind]">Kind:</label>
-  <input name="strain[kind]" value='<%= "#{@strain.kind}" %>'>
+  <label class = "edit_form_input" for="strain[kind]">Kind:</label>
+  <input class = "edit_form_input" name="strain[kind]" value='<%= "#{@strain.kind}" %>'>
 
-  <label for="strain[review]">Review:</label>
-  <input name="strain[review]" value='<%= "#{@strain.review}" %>'>
+  <label class = "edit_form_input" for="strain[review]">Review:</label>
+  <input class = "edit_form_input" name="strain[review]" value='<%= "#{@strain.review}" %>'>
 
 <input name="_method" type="hidden" value='put'>
 

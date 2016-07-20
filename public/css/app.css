@@ -92,9 +92,12 @@ label {
 	text-align: center;
 }
 
-input {
+.edit_form_input {
+border-radius:10px;
+	}
+
+	input {
 	width: 100px;
 	height: 15px;
 	text-align: center;
-
 }
