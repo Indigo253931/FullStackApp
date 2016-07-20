@@ -1,5 +1,5 @@
  class CannaViews < Sinatra::Base
-
+use Rack::MethodOverride
  # General route action
  get '/' do 
  	erb :index
@@ -28,7 +28,7 @@ get '/layout' do
 
  # CREATE
  post '/strains' do 
- 	@strain = Strain.new(params[:id])
+ 	@strain = Strain.new(params[:strain])
  	if @strain.save
  		redirect("/strains/#{@strain.id}")
  	else
@@ -55,7 +55,7 @@ end
 put '/strains/:id' do
 	@strain = Strain.find(params[:id])
 	if @strain.update_attributes(params[:strain])
-	redirect("/strains/#{strain.id}")
+	redirect("/strains/#{@strain.id}")
 else 
 	erb(:"strains/edit")
 end
