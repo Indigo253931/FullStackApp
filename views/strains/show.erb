@@ -3,10 +3,14 @@
 <h3><%= @strain.rating %></h3>
 <h3><%= @strain.review %></h3>
  
+        <a class ="view_all_btn" href="/strains"> All Strains
+        </a>
+
         <a href="/strains/<%= @strain.id %>/edit">
           <button>Edit</button>
         </a>
 
+         
 
            <form method="post" action="/strains/<%= @strain.id %>"> 
            <input name="_method" type="hidden" value='delete'>

@@ -43,6 +43,13 @@ div {
 	font-weight: lighter;
 }
 
+.view_all_btn {
+font-size: 50px;
+position: absolute;
+top: 8px;
+left: 16px;
+}
+
 a {
 	text-align: center;
 	font-family: "Big Caslon";
