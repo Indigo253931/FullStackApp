@@ -1,0 +1,15 @@
+<h2><%= @strain.name %></h2>
+<h3><%= @strain.kind %></h3>
+<h3><%= @strain.rating %></h3>
+<h3><%= @strain.review %></h3>
+ 
+        <a href="/strains/<%= @strain.id %>/edit">
+          <button>Edit</button>
+        </a>
+
+
+           <form method="post" action="/strains/<%= @strain.id %>"> 
+           <input name="_method" type="hidden" value='delete'>
+          <input type="submit" value="Delete">
+          </form>
+     
