@@ -10,19 +10,6 @@
             <%= strain.name %>
           </a>
         </h2>
-  
-    
-   
-        <a href="/strains/<%= strain.id %>/edit">
-          <button>Edit</button>
-        </a>
-     
-           <form method="post" action="/strains/<%= strain.id %>"> 
-           <input name="_method" type="hidden" value='delete'>
-          <input type="submit" value="Delete">
-          </form>
-        
-
 
          <ul>
           <li>
