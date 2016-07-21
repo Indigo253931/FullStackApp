@@ -1,11 +1,24 @@
+<<<<<<< HEAD
 body{
 	opacity: .9;
+=======
+html{
+>>>>>>> 4ccc417d3ddeb6395de58226fad395a35b5e684c
 	background-image: url('/images/frosty.jpg');
 	background-size: cover;	
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
+<<<<<<< HEAD
  	-o-background-size: cover;
  	opacity: .8;
+=======
+ 	 -o-background-size: cover;
+ 	 opacity: .8;
+} 
+
+body{
+	opacity: .9;
+>>>>>>> 4ccc417d3ddeb6395de58226fad395a35b5e684c
 	}
 
 div {
