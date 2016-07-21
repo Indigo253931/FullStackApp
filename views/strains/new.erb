@@ -1,3 +1,7 @@
+<nav>
+<a class ="view_all_btn" href="/strains"> All Strains</a>
+</nav>
+
 <div class ="strain_list">
 <h1 id = "new_title">New Strain</h1>
 </div>
@@ -16,6 +20,9 @@
 
   <label for="strain[review]">Review:</label>
   <input class = "edit_form_input" name="strain[review]" placeholder="Top quality">
+
+  <label for="strain[media]">URL:</label>
+  <input class = "edit_form_input" name="strain[media]" placeholder="IMAGE HERE" value='<%= "#{@strain.media}" %>'>
 
   <input id = "save_btn" class = "edit_form_input" type="submit" value="Create">
 </form>

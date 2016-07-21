@@ -1,20 +1,18 @@
-
-
 #STRAINS
 
-# index
+# GET ALL STRAINS
  get '/strains' do 
  	@strains = Strain.all 
  	erb(:"strains/index")
  end
 
- # new
+ # GET NEW STRAIN
  get '/strains/new' do
  	@strain = Strain.new
  	erb(:"strains/new")
  end
 
- # create
+ # CREATE/POST STRAIN
  post '/strains' do 
  	@strain = Strain.new(params[:strain])
  	if @strain.save
@@ -24,19 +22,19 @@
  	end
  end
 
-  # show
+  # GET/SHOW STRAIN
  get '/strains/:id' do 
  	@strain = Strain.find(params[:id])
  	erb(:"strains/show")
  end
 
- # edit
+ # EDIT STRAIN
 get '/strains/:id/edit' do
 	@strain = Strain.find(params[:id])
 	erb(:"strains/edit")
 end
 
-# update
+# UPDATE/PUT STRAIN
 put '/strains/:id' do 
 	@strain = Strain.find(params[:id])
 	if @strain.update_attributes(params[:strain])
@@ -46,7 +44,7 @@ else
 end
 end
 
-# delete
+# DELETE
 delete '/strains/:id' do 
 	@strain = Strain.find(params[:id])
 	if @strain.destroy

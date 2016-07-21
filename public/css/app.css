@@ -118,6 +118,12 @@ a 	{
 	left: 200px;
 	}	
 
+#save_btn {
+	width: 50px;
+	height: 20px;
+	padding-top: 0px;
+	}
+
 #new_strain_body {
 	border-radius:10px;
 }	
@@ -147,7 +153,12 @@ a 	{
 	left: 16px;
 	}
 
-
+#show_strain_name:hover {
+	color: green;
+}
+.show_strain:hover {
+	color: orange;
+}
 .edit_form_input {
 border-radius:10px;
 padding-top: 10px;
