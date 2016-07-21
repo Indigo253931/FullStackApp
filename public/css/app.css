@@ -1,6 +1,7 @@
 body{
-	background-image: url('/images/Blueberry Yum Yum.png');
+	background-image: url('/images/frosty.jpg');
 	background-size: cover;
+	opacity: .8;
 	}
 
 div {
@@ -9,23 +10,64 @@ div {
 	font-weight: lighter;
 	}
 
+	nav {
+		background-color: white;
+		opacity: .8;
+		padding-top: ;
+		padding-right: ;
+		padding-bottom: ;
+		padding-left: ;
+		border-width: ;
+		border-style: ;
+	}
+
 h1 {
 	text-align: center;
-	font-size: 80px;
-	font-family: "Big Caslon";
+	font-size: 150px;
+	font-family: "Optima";
+	color: #2ba15e;
+	opacity: .9;
 	font-weight: lighter;
+	-o-transition:color .5s ease-out, background 3s ease-in;
+  -ms-transition:color .5s ease-out, background 3s ease-in;
+  -moz-transition:color .5s ease-out, background 3s ease-in;
+  -webkit-transition:color .5s ease-out, background 3s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .5s ease-out, background 5s ease-in;
+	
+		background-color: white;
+		opacity: .8;
+		padding-top: ;
+		padding-right: ;
+		padding-bottom: ;
+		padding-left: ;
+		border-width: ;
+		border-style: ;
 	}
 
 h1:hover {
-	color: white;
+	color: #efb451;
+	opacity: .9;
 }
 
 #new_title:hover {
-color: green;
+color: #efb451;
+}
+
+#edit_strain_title {
+color: #efb451;
+}
+
+#edit_strain_title:hover {
+color: 	#2ba15e;
+}
+
+#edit_strain_title:hover; {
+	color: #2ba15e;
 }
 
 h2:hover {
-	color: white;
+	color: #efb451;
 }
 
 h2  {
@@ -36,7 +78,7 @@ h2  {
 	}
 
 h3:hover {
-	color: white;
+	color: #efb451;
 }
 
 h3  {
@@ -57,10 +99,12 @@ label {
 	font-size: 40px;
 	font-family: "Big Caslon";
 	font-weight: lighter;
+	color: #2ba15e;
 	}
 
 	label:hover {
-		color: purple;
+		color: #efb451;
+
 		opacity: .9;
 	}
 
@@ -79,15 +123,16 @@ li {
 	font-family: "Big Caslon";
 	font-weight: lighter;
 	font-size: 45px;
+	color: #2ba15e;
 	}
 
 	li:hover {
-		color: orange;
+		color: #efb451;
 	}
 
 
 a:hover {
-    color: green;
+    color: #efb451;
 	}
 
 a 	{
@@ -95,7 +140,7 @@ a 	{
 	font-family: "Big Caslon";
 	font-weight: lighter;
 	font-size: 50px;
-	color: black;
+	color: #2ba15e;
 	text-decoration: none;
 	}
 
@@ -107,7 +152,7 @@ a 	{
 	}
 
 	#strain_name:hover {
-	color: black;
+	color: #efb451;
 	display: block;
 	}
 
@@ -116,12 +161,14 @@ a 	{
 	height: 20px;
 	position: absolute;
 	left: 200px;
+	color: #2ba15e;
 	}	
 
 #save_btn {
 	width: 50px;
 	height: 20px;
 	padding-top: 0px;
+	color: #2ba15e;
 	}
 
 #new_strain_body {
@@ -137,27 +184,29 @@ a 	{
 }
 
 .strain_list:hover {
-	color: black;
+	color: #efb451;
 	opacity: 0.8;
 }
 .btn {
 		text-align: center;
 	 }
 .btn:hover {
-		color: white;
+		color: #efb451;
 	 }
-.view_all_btn {
+
+.all_strains_page {
 	font-size: 50px;
 	position: absolute;
 	top: 8px;
 	left: 16px;
+	display: block;
 	}
 
 #show_strain_name:hover {
-	color: green;
+	color: #efb451;
 }
 .show_strain:hover {
-	color: orange;
+	color: #efb451;
 }
 .edit_form_input {
 border-radius:10px;
@@ -166,9 +215,9 @@ padding-bottom: 10px;
 padding-right: 30px;
 padding-left: 20px;
 font-size: 20px;
-color: purple;
+color: #2ba15e;
 	}
 
 	.edit_form_input:hover {
-		color:green;
+		color:#efb451;
 	}

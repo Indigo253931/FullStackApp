@@ -1,8 +1,8 @@
 <nav>
-<a class ="view_all_btn" href="/strains"> All Strains</a>
+<a class ="all_strains_page" href="/strains"> All Strains</a>
 </nav>
 
-<h1>Edit Strain</h1>
+<h1 id="edit_strain_title">Update</h1>
 
 <form action='/strains/<%= "#{@strain.id}" %>' method="post">
   <label for="strain[name]">Name:</label>
