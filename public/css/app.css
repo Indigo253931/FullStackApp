@@ -23,47 +23,28 @@ div {
 
 h1 {
 	text-align: center;
-	font-size: 150px;
+	font-size: 100px;
 	font-family: "Optima";
 	color: #2ba15e;
-	opacity: .9;
 	font-weight: lighter;
+	background-color: white;
+	opacity: .8;
+	padding-top: ;
+	padding-right: ;
+	padding-bottom: ;
+	padding-left: ;
+	border-width: ;
+	border-style: ;
 	-o-transition:color .5s ease-out, background 3s ease-in;
-  -ms-transition:color .5s ease-out, background 3s ease-in;
-  -moz-transition:color .5s ease-out, background 3s ease-in;
-  -webkit-transition:color .5s ease-out, background 3s ease-in;
-  /* ...and now override with proper CSS property */
-  transition:color .5s ease-out, background 5s ease-in;
-	
-		background-color: white;
-		opacity: .8;
-		padding-top: ;
-		padding-right: ;
-		padding-bottom: ;
-		padding-left: ;
-		border-width: ;
-		border-style: ;
+  	-ms-transition:color .5s ease-out, background 3s ease-in;
+  	-moz-transition:color .5s ease-out, background 3s ease-in;
+  	-webkit-transition:color .5s ease-out, background 3s ease-in;
+  	transition:color .5s ease-out, background 5s ease-in;
 	}
 
 h1:hover {
 	color: #efb451;
 	opacity: .9;
-}
-
-#new_title:hover {
-color: #efb451;
-}
-
-#edit_strain_title {
-color: #efb451;
-}
-
-#edit_strain_title:hover {
-color: 	#2ba15e;
-}
-
-#edit_strain_title:hover; {
-	color: #2ba15e;
 }
 
 h2:hover {
@@ -75,17 +56,27 @@ h2  {
 	font-family: "Big Caslon";
 	font-weight: lighter;
 	font-size: 60px;
+	-o-transition:color .5s ease-out, background 3s ease-in;
+	-ms-transition:color .5s ease-out, background 3s ease-in;
+  	-moz-transition:color .5s ease-out, background 3s ease-in;
+  	-webkit-transition:color .5s ease-out, background 3s ease-in;
+  	transition:color .5s ease-out, background 5s ease-in;
 	}
 
 h3:hover {
 	color: #efb451;
-}
+	}
 
 h3  {
 	text-align: center;
 	font-family: "Big Caslon";
 	font-weight: lighter;
 	font-size: 50px;
+	-o-transition:color .5s ease-out, background 3s ease-in;
+  	-ms-transition:color .5s ease-out, background 3s ease-in;
+  	-moz-transition:color .5s ease-out, background 3s ease-in;
+  	-webkit-transition:color .5s ease-out, background 3s ease-in;
+  	transition:color .5s ease-out, background 5s ease-in;
 	}
 
 form {
@@ -100,12 +91,19 @@ label {
 	font-family: "Big Caslon";
 	font-weight: lighter;
 	color: #2ba15e;
+	background-color: white;
+	opacity: .9;
+	-o-transition:color .5s ease-out, background 3s ease-in;
+	-ms-transition:color .5s ease-out, background 3s ease-in;
+  	-moz-transition:color .5s ease-out, background 3s ease-in;
+  	-webkit-transition:color .5s ease-out, background 3s ease-in;
+  	transition:color .5s ease-out, background 5s ease-in;
+
 	}
 
-	label:hover {
-		color: #efb451;
-
-		opacity: .9;
+label:hover {
+	color: #efb451;
+	opacity: .9;
 	}
 
 input {
@@ -124,12 +122,16 @@ li {
 	font-weight: lighter;
 	font-size: 45px;
 	color: #2ba15e;
+	-o-transition:color .5s ease-out, background 3s ease-in;
+  	-ms-transition:color .5s ease-out, background 3s ease-in;
+  	-moz-transition:color .5s ease-out, background 3s ease-in;
+  	-webkit-transition:color .5s ease-out, background 3s ease-in;
+  	transition:color .5s ease-out, background 5s ease-in;
 	}
 
 	li:hover {
 		color: #efb451;
 	}
-
 
 a:hover {
     color: #efb451;
@@ -142,6 +144,11 @@ a 	{
 	font-size: 50px;
 	color: #2ba15e;
 	text-decoration: none;
+	-o-transition:color .5s ease-out, background 3s ease-in;
+  	-ms-transition:color .5s ease-out, background 3s ease-in;
+  	-moz-transition:color .5s ease-out, background 3s ease-in;
+  	-webkit-transition:color .5s ease-out, background 3s ease-in;
+  	transition:color .5s ease-out, background 5s ease-in;
 	}
 
 #strain_name {
@@ -149,31 +156,76 @@ a 	{
 	font-family: "Big Caslon";
 	font-weight: lighter;
 	font-size: 70px;
+	-o-transition:color .5s ease-out, background 3s ease-in;
+  	-ms-transition:color .5s ease-out, background 3s ease-in;
+  	-moz-transition:color .5s ease-out, background 3s ease-in;
+  	-webkit-transition:color .5s ease-out, background 3s ease-in;
+  	transition:color .5s ease-out, background 5s ease-in;
 	}
 
-	#strain_name:hover {
+#strain_name:hover {
 	color: #efb451;
 	display: block;
 	}
 
-#edit_button {
-	width: 50px;
-	height: 20px;
-	position: absolute;
-	left: 200px;
-	color: #2ba15e;
-	}	
+#show_strain_name:hover {
+	color: #efb451;
+}
 
-#save_btn {
-	width: 50px;
-	height: 20px;
-	padding-top: 0px;
-	color: #2ba15e;
-	}
+#new_title:hover {
+	color: #efb451;
+}
 
 #new_strain_body {
 	border-radius:10px;
 }	
+
+#edit_strain_title {
+	color: #efb451;
+	-o-transition:color .5s ease-out, background 3s ease-in;
+	-ms-transition:color .5s ease-out, background 3s ease-in;
+  	-moz-transition:color .5s ease-out, background 3s ease-in;
+  	-webkit-transition:color .5s ease-out, background 3s ease-in;
+  	transition:color .5s ease-out, background 5s ease-in;
+}
+
+#edit_strain_title:hover {
+	color: 	#2ba15e;
+}
+
+#edit_button {
+	width: 100px;
+	height: 70px;
+	position: absolute;
+	left: 200px;
+	color: #2ba15e;
+	font-size: 30px;
+	}	
+
+#save_btn {
+	width: 100px;
+	height: 70px;
+	padding-top: 0px;
+	color: #2ba15e;
+	font-size: 30px;
+	opacity: .8;
+	}
+
+#delete_btn {
+	width: 100px;
+	height: 100px;
+	padding-top: 10px;
+	color: #2ba15e;
+	font-size: 30px;
+	opacity: .8;
+	}
+.btn {
+		text-align: center;
+	 }
+
+.btn:hover {
+		color: #efb451;
+	 }
 
 .strain_list {
 	border-radius:10px;
@@ -183,16 +235,9 @@ a 	{
 	background-color: white;
 }
 
-.strain_list:hover {
+.show_strain:hover {
 	color: #efb451;
-	opacity: 0.8;
 }
-.btn {
-		text-align: center;
-	 }
-.btn:hover {
-		color: #efb451;
-	 }
 
 .all_strains_page {
 	font-size: 50px;
@@ -202,22 +247,22 @@ a 	{
 	display: block;
 	}
 
-#show_strain_name:hover {
+.strain_list:hover {
 	color: #efb451;
+	opacity: 0.8;
 }
-.show_strain:hover {
-	color: #efb451;
-}
+
+
 .edit_form_input {
-border-radius:10px;
-padding-top: 10px;
-padding-bottom: 10px;
-padding-right: 30px;
-padding-left: 20px;
-font-size: 20px;
-color: #2ba15e;
+	border-radius:10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	padding-left: 20px;
+	font-size: 20px;
+	color: #2ba15e;
 	}
 
-	.edit_form_input:hover {
+.edit_form_input:hover {
 		color:#efb451;
 	}
