@@ -1,6 +1,6 @@
 # FullStackApp
 
-Heroku: https://fierce-headland-62439.herokuapp.com/
+Heroku: https://slack-redir.net/link?url=https%3A%2F%2Fblooming-bastion-82823.herokuapp.com%2Fstrains
 
 Trello board: https://trello.com/b/4pKjpKsB/project-2-a-full-stack-application
 
