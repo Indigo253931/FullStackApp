@@ -1,37 +1,47 @@
 # FullStackApp
 
-Heroku: https://fierce-headland-62439.herokuapp.com/
+Heroku: https://slack-redir.net/link?url=https%3A%2F%2Fblooming-bastion-82823.herokuapp.com%2Fstrains
 
-Trello board: https://trello.com/b/4pKjpKsB/project-2-a-full-stack-application
+Trello: https://trello.com/b/4pKjpKsB/project-2-a-full-stack-application
 
 Wireframes: https://github.com/Indigo253931/FullStackApp/tree/master/Wireframes
 
 
-App description: My app allows users to CRUD cannabis strains in addition to ratings and reviews.
 
 
-4 routes: 
+App description: 
 
-GET:  Users can view all strains, ratings and reviews.
+My app allows users to create cannabis strains and update the rating, review, image, and details for each one. 
+Users also have the ability to read and delete any posted content. 
 
-POST: Users can post a strain, rating and review.
+CannaViews is made for the user to both document their personal experience with any strain, as well analyze the reviews and information made available through the submissions made by other users. 
 
-PUT: Users can update their strains, ratings reviews.
 
-DELETE: Users can delete their strains, ratings and reviews.
+
+4 RESTful routes: 
+
+GET:  Users can view all strains and their details.
+
+POST: Users can  create strains and include details.
+
+PUT: Users can update their strains and their details.
+
+DELETE: Users can delete their strains.
+
 
 
 Technologies used: 
 
 -HTML as the boiler plate
 
--CSS to add styling
+-CSS for styling
 
 -ERB: Use Embedded RuBy to generate text from templates. The templates combine plain text with Ruby code for variable substitution and flow control. Templates are to be kept in the folder 'views'.
 
 -SQL
 
 -ActiveRecord for database table structure and interaction with relationally-stored data.
+
 
 
 Installation instructions:
