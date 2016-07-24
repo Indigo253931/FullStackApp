@@ -1,3 +1,10 @@
+#links {
+background-color: white; 
+opacity: .9;
+text-align: center;
+border-radius: 10px; 
+}
+
 body {
     opacity: .9;
     background-image: url(/images/frosty.jpg);
@@ -5,10 +12,6 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-}
-
-body {
-    opacity: .9;
 }
 
 div {
@@ -22,13 +25,21 @@ nav {
     opacity: .8;
 }
 
-h1:hover {
+h1, h2, h3, label, a, 
+#strain_name, 
+#show_strain_name, 
+.show_strain, 
+#edit_strain_title, 
+#new_title, 
+.strain_list, 
+.btn:hover {
     color: #764eca;
     opacity: .9;
 }
 
-h1 {
+h1, h2, h3, label, form, li {
     text-align: center;
+    border-radius: 10px; 
     font-size: 100px;
     font-family: "Optima";
     color: #2ba15e;
@@ -42,71 +53,30 @@ h1 {
     transition: color .5s ease-out,background 5s ease-in;
 }
 
-h2:hover {
-    color: #764eca;
-    opacity: .9;
-}
 
 h2 {
-    text-align: center;
-    font-family: "Big Caslon";
-    font-weight: lighter;
     font-size: 60px;
-    -o-transition: color .5s ease-out,background 3s ease-in;
-    -ms-transition: color .5s ease-out,background 3s ease-in;
-    -moz-transition: color .5s ease-out,background 3s ease-in;
-    -webkit-transition: color .5s ease-out,background 3s ease-in;
-    transition: color .5s ease-out,background 5s ease-in;
-    opacity: .8;
-}
-
-h3:hover {
-    color: #764eca;
-    opacity: .9;
 }
 
 h3 {
-    text-align: center;
-    font-family: "Big Caslon";
-    font-weight: lighter;
     font-size: 50px;
-    -o-transition: color .5s ease-out,background 3s ease-in;
-    -ms-transition: color .5s ease-out,background 3s ease-in;
-    -moz-transition: color .5s ease-out,background 3s ease-in;
-    -webkit-transition: color .5s ease-out,background 3s ease-in;
-    transition: color .5s ease-out,background 5s ease-in;
-    opacity: .8;
 }
 
 form {
-    text-align: center;
-    font-family: "Big Caslon";
-    font-weight: lighter;
     display: block;
     background-color: #fff;
-    opacity: .8;
-}
-
-label:hover {
-    color: #764eca;
-    opacity: .9;
 }
 
 label {
+
     font-size: 40px;
-    font-family: "Big Caslon";
     font-weight: lighter;
     color: #2ba15e;
     background-color: #fff;
-    opacity: .8;
-    -o-transition: color .5s ease-out,background 3s ease-in;
-    -ms-transition: color .5s ease-out,background 3s ease-in;
-    -moz-transition: color .5s ease-out,background 3s ease-in;
-    -webkit-transition: color .5s ease-out,background 3s ease-in;
-    transition: color .5s ease-out,background 5s ease-in;
 }
 
 input {
+	border-radius: 10px; 
     width: 70px;
     height: 15px;
 }
@@ -120,23 +90,12 @@ li:hover {
 }
 
 li {
-    text-align: center;
-    font-family: "Big Caslon";
-    font-weight: lighter;
     font-size: 50px;
     color: #764eca;
-    -o-transition: color .5s ease-out,background 3s ease-in;
-    -ms-transition: color .5s ease-out,background 3s ease-in;
-    -moz-transition: color .5s ease-out,background 3s ease-in;
-    -webkit-transition: color .5s ease-out,background 3s ease-in;
-    transition: color .5s ease-out,background 5s ease-in;
 }
 
-a:hover {
-    color: #764eca;
-}
 
-a {
+a, #strain_name {
     text-align: center;
     font-family: "Big Caslon";
     font-weight: lighter;
@@ -150,50 +109,13 @@ a {
     transition: color .5s ease-out,background 5s ease-in;
 }
 
-#strain_name:hover {
-    color: #764eca;
-    display: block;
-}
 
-#strain_name {
-    text-align: center;
-    font-family: "Big Caslon";
-    font-weight: lighter;
-    font-size: 70px;
-    -o-transition: color .5s ease-out,background 3s ease-in;
-    -ms-transition: color .5s ease-out,background 3s ease-in;
-    -moz-transition: color .5s ease-out,background 3s ease-in;
-    -webkit-transition: color .5s ease-out,background 3s ease-in;
-    transition: color .5s ease-out,background 5s ease-in;
-}
-
-#show_strain_name:hover {
-    color: #764eca;
-}
-
-#show_strain_name {
+#show_strain_name, .show_strain,  {
     color: #2ba15e;
-}
-
-.show_strain:hover {
-    color: #764eca;
-}
-
-.show_strain {
-    color: #2ba15e;
-}
-
-#new_title:hover {
-    color: #764eca;
 }
 
 #new_strain_body {
     border-radius: 10px;
-}
-
-#edit_strain_title:hover {
-    color: #764eca;
-    opacity: .9;
 }
 
 #edit_strain_title {
@@ -209,7 +131,6 @@ a {
 #edit_button {
     width: 100px;
     height: 70px;
-    position: absolute;
     left: 200px;
     color: #2ba15e;
     font-size: 30px;
@@ -219,37 +140,15 @@ a {
     opacity: .9;
 }
 
-#save_btn {
-    width: 90px;
-    height: 30px;
-    padding-top: 0;
-    color: #2ba15e;
-    font-size: 20px;
-    opacity: .8;
-    padding-left: 15px;
-}
-
-#save_edit_btn {
-    width: 100px;
-    height: 70px;
-    padding-top: 0;
-    color: #2ba15e;
-    font-size: 30px;
-    opacity: .8;
-}
-
+#save_edit_btn, 
+#save_btn, 
 #delete_btn {
     width: 100px;
-    height: 100px;
-    padding-top: 10px;
+    height: 70px;
+    padding-top: 10;
     color: #2ba15e;
     font-size: 30px;
     opacity: .8;
-}
-
-.btn:hover {
-    color: #764eca;
-    opacity: .9;
 }
 
 .btn {
@@ -258,10 +157,6 @@ a {
     opacity: .8;
 }
 
-.strain_list:hover {
-    color: #764eca;
-    opacity: .9;
-}
 
 .strain_list {
     border-radius: 10px;
@@ -277,8 +172,7 @@ a {
     display: block;
 }
 
-.edit_form_input:hover {
-    color: #764eca;
+.edit_form_input:
 }
 
 .edit_form_input {

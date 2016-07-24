@@ -1,19 +1,16 @@
 <nav>
 <a class ="all_strains_page" href="/strains">All Strains</a>
 </nav>
-
 <div class ="strain_list">
 <h2 id = "show_strain_name"><%= @strain.name %></h2>
 <h3 class = "show_strain"><%= @strain.rating %></h3>
 <h3 class = "show_strain"><%= @strain.kind %></h3>
 <h3 class = "show_strain"><%= @strain.review %></h3>
-<img src = "<%= @strain.media %>" height="300px" width ="300px"/> 
+<img class = "show_strain" src = "<%= @strain.media %>" height="300px" width ="300px"/> 
 </div>
-
 <a id ="edit_button" href="/strains/<%= @strain.id %>/edit">
 <button id ="edit_button">Edit</button>
 </a>
-
 <form method="post" action="/strains/<%= @strain.id %>"> 
 <input name="_method" type="hidden" value='delete' >
 <input id = "delete_btn" type="submit" value="Delete">

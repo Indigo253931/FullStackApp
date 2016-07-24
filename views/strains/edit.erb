@@ -11,8 +11,9 @@
   <input class = "edit_form_input" name="strain[kind]" placeholder="Hybrid" value='<%= "#{@strain.kind}" %>'>
   <label for="strain[review]">Review:</label>
   <input class = "edit_form_input" name="strain[review]" placeholder="Top quality" value='<%= "#{@strain.review}" %>'>
-  <label for="strain[media]">URL:</label>
+  <label for="strain[media]">Image:</label>
   <input class = "edit_form_input" name="strain[media]" placeholder="IMAGE HERE" value='<%= "#{@strain.media}" %>'>
+
   <input name="_method" type="hidden" value='put'>
   <input id = "save_edit_btn" type="submit" value="Save">
 </form>
