@@ -19,9 +19,9 @@
   #strain_menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: space-around;
   }
   #strain_menu_item {
   }
@@ -31,6 +31,9 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-start;
+}
+#nav {
+  flex-wrap: wrap;
 }
 #strain_name, #strain_rating, #strain_img, 
 #strain_kind {
@@ -53,6 +56,11 @@
 }
 
 /**//* *//* *//* *//* *//*  GLOBAL STYLES *//* *//* *//* *//* *//* *//* */
+
+* {
+  text-align: center;
+}
+
 .flex_parent_container {
 border-radius: 22px 22px 22px 22px;
 border: 2px solid black;
