@@ -1,3 +1,8 @@
+# Connect to the db by setting an envrionment variable ENV['DATABASE_URL']
+# or by using a config file called config/database.yml
+  # Here you can specify all info needed to access the db
+
+# This will connect to the db CannaViews using the postgres adapter.
 development:
   adapter: postgresql
   database: CannaViews

@@ -1,18 +1,20 @@
-<nav>
-<a class ="all_strains_page" href="/strains">All Strains</a>
-</nav>
-<div class ="strain_list">
-<h2 id = "show_strain_name"><%= @strain.name %></h2>
-<h3 class = "show_strain"><%= @strain.rating %></h3>
-<h3 class = "show_strain"><%= @strain.kind %></h3>
-<h3 class = "show_strain"><%= @strain.review %></h3>
-<img class = "show_strain" src = "<%= @strain.media %>" height="300px" width ="300px"/> 
+<div class='flex_parent_container' id='strain_id'>
+	<div class='flex_child_item' id='strain_item'>
+		<img src="<%= @strain.media %>" height="300px" width="300px"/>
+		<h2><%= @strain.name %></h2>
+		<p><%= @strain.kind %></p>
+		<p><%= @strain.rating %></p>
+		<p><%= @strain.review %></p>
+	<div class='flex_child_item' id='btn'>
+		<a href="/strains/<%= @strain.id %>/edit">
+			<button class='btn'>Edit</button>
+		</a>
+			<form method="post" action="/strains/<%= @strain.id %>">
+				<input class='btn' type="submit" value="Delete">
+					<input name="_method" type="hidden" value='delete' >
+			</form>
+	</div>
+	</div>
+
 </div>
-<a id ="edit_button" href="/strains/<%= @strain.id %>/edit">
-<button id ="edit_button">Edit</button>
-</a>
-<form method="post" action="/strains/<%= @strain.id %>"> 
-<input name="_method" type="hidden" value='delete' >
-<input id = "delete_btn" type="submit" value="Delete">
-</form>
-     
+

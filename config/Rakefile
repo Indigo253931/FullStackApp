@@ -1,2 +1,25 @@
  require './app'
  require 'sinatra/activerecord/rake'
+
+# Rake stands for "ruby make", which is a tool you can use to run predefined tasks. 
+# You can program your own rake tasks, 
+# but ActiveRecord already comes with preset ones which can be used to set up the db.
+
+# Store the data in the db in Postgres. 
+
+# First, create a database.
+
+	# Run 'psql
+
+	# Ensure Postgres application/server is open and running with 'rake db:create'
+
+	# Create database with 'create database strains;'
+
+	# Bootup application with 'rackup'
+
+	# To auto-reload the page when files change, 
+	# run 'gem install shotgun' and shotgun config.ru
+
+	# Start it up and check it out in the browser
+
+	# Run 'rake -T' to list of rake commands you can run on the db.

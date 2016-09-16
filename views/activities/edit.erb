@@ -1,0 +1,15 @@
+<!-- Update Activity -->
+<div class='flex_parent_container' id='form'>
+  <div class='flex_child_item form' id='update_activity'>
+    <h1>Update</h1>
+    <form action='/activities/<%= "#{@activity.id}" %>' method='post'>
+      <div class='flex_child_item'>
+        <label for="activity[name]">Name:</label>
+          <input class="form_input" name="activity[name]" placeholder='Maui Waui' value='<%= "#{@activity.name}" %>'>
+      </div>
+      <div class='flex_child_item'>
+        <input class='btn' type="submit" value="Save">
+          <input name="_method" type="hidden" value='put'>
+      </div>
+    </form>
+</div>

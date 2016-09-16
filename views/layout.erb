@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CannaViews</title>
+  <title>HydraAtleta</title>
   <link rel="stylesheet" type="text/css" href="/css/app.css">
 </head>
-<body>
-  <header>
-  </header>
-  <main>
-    <%= yield %>
-  </main>
-  <footer></footer>
-</body>
+<nav>
+	<ul>
+		<li>
+			<img src='/images/icons/music_icon.png' class='nav_icon'/>
+		</li>
+		<li>
+			<img src='/images/icons/activities/heart-rate.png' class='nav_icon'/>
+		</li>
+	</ul>
+</nav>
+	<body>
+	  <main>
+		  <!-- Boilerplate -->
+		    <%= yield %>
+		</main>
+	</body>
 </html>

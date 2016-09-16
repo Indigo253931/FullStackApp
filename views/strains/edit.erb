@@ -1,19 +1,31 @@
-<nav>
-<a class ="all_strains_page" href="/strains">All Strains</a>
-</nav>
-<h1 id="edit_strain_title">Update</h1>
-<form action='/strains/<%= "#{@strain.id}" %>' method="post">
-  <label for="strain[name]">Name:</label>
-  <input class = "edit_form_input" name="strain[name]" placeholder="Mango Kush" value='<%= "#{@strain.name}" %>'>
-  <label for="strain[rating]">Rating:</label>
-  <input class = "edit_form_input" name="strain[rating]" placeholder="4.5" value='<%= "#{@strain.rating}" %>'>
-  <label for="strain[kind]">Kind:</label>
-  <input class = "edit_form_input" name="strain[kind]" placeholder="Hybrid" value='<%= "#{@strain.kind}" %>'>
-  <label for="strain[review]">Review:</label>
-  <input class = "edit_form_input" name="strain[review]" placeholder="Top quality" value='<%= "#{@strain.review}" %>'>
-  <label for="strain[media]">Image:</label>
-  <input class = "edit_form_input" name="strain[media]" placeholder="IMAGE HERE" value='<%= "#{@strain.media}" %>'>
-
-  <input name="_method" type="hidden" value='put'>
-  <input id = "save_edit_btn" type="submit" value="Save">
-</form>
+<!-- Update Strain -->
+<div class='flex_parent_container' id='form'>
+  <div class='flex_child_item form' id='update_strain'>
+    <h1>Update</h1>
+    <form action='/strains/<%= "#{@strain.id}" %>' method='post'>
+      <div class='flex_child_item'>
+        <label for="strain[name]">Name:</label>
+          <input class="form_input" name="strain[name]" placeholder='Maui Waui' value='<%= "#{@strain.name}" %>'>
+      </div>
+      <div class='flex_child_item'>
+        <label for="strain[rating]">Rating:</label>
+          <input class="form_input" name="strain[rating]" placeholder="4.5" value='<%= "#{@strain.rating}" %>'>
+     </div>
+      <div class='flex_child_item'>
+        <label for="strain[media]">Image:</label>
+          <input class="form_input" name="strain[media]" placeholder="IMG URL" value='<%= "#{@strain.media}" %>'>
+      </div>
+      <div class='flex_child_item'>
+        <label for="strain[kind]">Kind:</label>
+          <input class="form_input" name="strain[kind]" placeholder="Hybrid" value='<%= "#{@strain.kind}" %>'>
+      </div>
+      <div class='flex_child_item'>
+        <label for="strain[review]">Review:</label>
+          <input class="form_input" name="strain[review]" placeholder="Top shelf" value='<%= "#{@strain.review}" %>'>
+      </div>
+      <div class='flex_child_item'>
+        <input class='btn' type="submit" value="Save">
+          <input name="_method" type="hidden" value='put'>
+      </div>
+    </form>
+</div>
