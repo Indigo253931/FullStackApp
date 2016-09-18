@@ -1,76 +1,73 @@
-/**//* *//* *//* *//* *//*  GLOBAL FLEX *//* *//* *//* *//* *//* *//* *//* 
-/* Full page container */
-.flex_parent_container {
+/**//* *//* *//* *//* *//*  GLOBAL FLEX *//* *//* *//* *//* *//* *//* *//
+.flexbox_container {
+  display: flex;
+}
+.flexbox_item {
+
+}
+#button {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/**//* *//* *//* *//* *//*  ID FLEX *//* *//* *//* *//* *//* *//* *//* /
+/* index.erb (homepage) */
+#flex_navbar {
+  display: flex;
+  flex-direction: row;
+}
+#flex_homepage {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-    /* Sections */
-  .flex_child_item {
-}
-/* Nav */
-
-/**//* *//* *//* *//* *//*  ID FLEX *//* *//* *//* *//* *//* *//* *//* /
-/* index.erb (homepage) */
-#homepage { 
-  flex-wrap: wrap;
-} 
-  /* index.erb (strain menu) */
-  #strain_menu {
+/* index.erb (strain menu) */
+#flex_menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    align-items: space-around;
-  }
-  #strain_menu_item {
-  }
-  /* show.erb * (one strain) */
-#strain_id, #update_strain {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: flex-start;
+    flex-wrap: flex-start;
+    align-content: ;
+    align-items: ;
 }
-#nav {
-  flex-wrap: wrap;
-}
-#strain_name, #strain_rating, #strain_img, 
-#strain_kind {
-  flex-wrap: nowrap;
-  align-self: flex-start;
-}
-   /* new.erb */ /* edit.erb */
-   #form {
+#menu_item {
 
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;  
-  align-items: center;
 }
-#new_strain_name {
-  align-items: center;
+/* show.erb * (one strain) */
+#flex_strain_display {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: flex-start;
+
 }
-#btn {
- 
+#strain_img {
+
+}
+#strain_details {
+
+}
+#strain_review {
+
 }
 
+/* new.erb */ /* edit.erb */
+#flex_form {
+  display: flex;
+  flex-direction: column;
+}
+#form_input {
+
+}
 /**//* *//* *//* *//* *//*  GLOBAL STYLES *//* *//* *//* *//* *//* *//* */
-
-* {
-  text-align: center;
+.flexbox_container {
+  border: 2px solid black;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(http://www.genkin.org/gallery/landscapes/beach-ocean-seascapes/northern-beaches-sydney/palm-beach-barrenjoey-0007.jpg);
 }
-
-.flex_parent_container {
-border-radius: 22px 22px 22px 22px;
-border: 2px solid black;
-height: 1500px;
-background-repeat: no-repeat;
-background-size: cover;
-background: url(http://67.media.tumblr.com/1fa89b522ab13ebbd8397bb13411c671/tumblr_o9lnbwwZoF1r1xpwxo1_500.gif);
-
-}
-.flex_child_item {
+.flexbox_item {
+  height: 200px;
+  width: height: 200px;
   margin: 4px;
   color: black;
   line-height: 40px;
@@ -81,17 +78,22 @@ background: url(http://67.media.tumblr.com/1fa89b522ab13ebbd8397bb13411c671/tumb
   border-radius: 8px; 
   box-shadow:  -6px 7px 6px 0px rgba(50, 50, 50, 0.89);
 }
-body {
-  margin: 0px;
-  font-family: Serif;
+#flex_navbar {
+  height: 100px;
+  width: 100%;
+  background: url(/images/palm-beach-barrenjoey-0007.jpg);
+  background-size: cover;
+}
+#nav_item {
+  line-height: normal;
+  height: 40px;
+  width: 20px;
 }
 nav {
-  background: url(/images/charlottes-web-pot-weed-farm-colorado-2.jpg);  
-  background-size: cover;
-  height: 300px;
+  /*background: url(/images/charlottes-web-pot-weed-farm-colorado-2.jpg);  
+  */background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid black;
-  border-radius: 8px;
 }
 
 .nav_icon {
@@ -103,6 +105,7 @@ h1, h2 {
 }
 h1 {
     text-shadow: 0 0 5px #000;
+    text-align: center;
 }
 h2 {
   font-size: 40px;
@@ -121,26 +124,25 @@ h2, p, a, li {
     color: black;
     text-shadow: -3px 0px 3px rgba(150, 150, 150, 1);
 }
-
 /**//* *//* *//* *//* *//*  ID STYLES *//* *//* *//* *//* *//* *//* */
-
-  /* index.erb (homepage) */
-  #homepage {
-    box-shadow: -3px 2px 20px 1px rgba(10,6,0,0.61);
-    height: 1500px
-   /* background: url(http://kraveit.com/blog/wp-content/uploads/2014/04/How-to-Blow-Smoke-Rings.jpg);
-*/}
-#btn {
-   background: transparent;
+/*
+index.erb (homepage) */
+#flex_homepage {
+  box-shadow: -3px 2px 20px 1px rgba(10,6,0,0.61);
+  border: none;
 }
-  #explanation, #about, #features {
-    height: 325px;
-    width: 325px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-  }
-  #menu {
+#about {
+
+}
+#explanation, #about, #features {
+  height: 350px;
+  width: 350px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  text-align: center;
+}
+ #menu {
     background: url(http://www.trbimg.com/img-55232157/turbine/ct-illinois-medical-marijuana-dispensaries-met-20150406);
     background-size: cover;
     height: 350px;
@@ -164,21 +166,8 @@ h2, p, a, li {
     width: 300px;
     background-size: 300px 300px;
   }
-  #learn {
-    background: url(/images/Cannabinoid_Receptors.jpg);
-    background-size: 300px 300px;
-    height: 300px;
-    width: 300px;
-  }
-  #exercise {
+  #health {
     background: url(https://d3atagt0rnqk7k.cloudfront.net/wp-content/uploads/2016/05/12001327/7-high-energy-strains-to-help-you-get-active-and-fight-fatigue.jpg);
-    background-size: 300px 300px;
-    height: 300px;
-    width: 300px;
-  }
-  #food {/*
-   *//*background: url(http://i1056.photobucket.com/albums/t369/greenridgeorganics/hearts_of_hemp_zpsea9b6aa8.png);*/
-    background: url(http://static1.squarespace.com/static/5380035ce4b03134acdf29a2/53800d0ee4b0870ae9a4296f/544ecb85e4b0dbaa84aa032d/1414450065893/VEGAN+BAR+W+BAG.jpg?format=1500w);
     background-size: 300px 300px;
     height: 300px;
     width: 300px;
@@ -189,47 +178,57 @@ h2, p, a, li {
     height: 300px;
     width: 300px;
   }
-  #grow {
+  #diy {
     background: url(https://media.giphy.com/media/3o6gaX5AEDBzogvNAY/giphy.gif);
     background-size: cover;
     height: 300px;
     width: 300px;
-  }
-  /* index.erb (strain menu) */
-  #strain_menu_item{
-   background-size: 80px 80px;
-    background-repeat: no-repeat;
-  }
-  .strain_id_link {
-    color: black;
-    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
-  }
-  /* show.erb * (one strain) */
-  #strain_item {
-    font-size: 80px;
-    margin: 0px;
-    line-height: normal;
-  }
+}
+/* index.erb (strain menu) */
+#flex_menu {
+}
+#menu_item {
+  height: 50px;
+  width: 250px;
+  text-align: center;
+}
+.strain_id_link {
+  color: black;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+/* show.erb * (one strain) */
+#flex_strain_display {
+  height: 900px;
+}
+#strain_img {
 
-  /* Forms: edit.erb & new.erb  */
-    #form {
+}
+#strain_details {
+font-size: 80px;
+line-height: normal;
+height: 100px;
+width: 100px;
+}
+#strain_review {
 
-  }
-   #update_strain {
-   height: 400px;
-   width: 300px; 
-  }
-  .btn, .form_input {
+}
+
+/* new.erb */ /* edit.erb */
+#flex_form {
+  height: 400px;
+  width: 300px; 
+}
+#form_input {
+  box-shadow: outset 0 2px 2px rgba(0, 0, 0, 0.2); 
+  font-size: 20px;
+}
+.btn, .form_input {
     text-align: center;
     width: 100px;
     padding: 15px;
     border-radius: 8px;
-  }
-  .form_input {
-    box-shadow: outset 0 2px 2px rgba(0, 0, 0, 0.2); 
-    font-size: 20px;
-  }
-  .btn {
+}
+.btn {
   color: rgb(99, 110, 181);
   font-size: 25px;
   padding: 5px;
@@ -241,8 +240,10 @@ h2, p, a, li {
   background: linear-gradient(175deg, rgb(172, 204, 255) 30%, rgb(159, 170, 248) 77%);
   box-shadow:         0px 1px 4px rgba(0, 30, 214, 1);
 }
-  .form_label {
-    float: left;
-    margin-right: 15px;
-    width: 100px;
-  }
+#btn {
+   background: transparent;
+}
+#button {
+  height: 90px;
+  width: 100px;
+}

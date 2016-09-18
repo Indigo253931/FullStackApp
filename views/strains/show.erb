@@ -1,20 +1,24 @@
-<div class='flex_parent_container' id='strain_id'>
-	<div class='flex_child_item' id='strain_item'>
-		<img src="<%= @strain.media %>" height="300px" width="300px"/>
-		<h2><%= @strain.name %></h2>
-		<p><%= @strain.kind %></p>
-		<p><%= @strain.rating %></p>
-		<p><%= @strain.review %></p>
-	<div class='flex_child_item' id='btn'>
+<div class='flexbox_container' id='flex_strain_display'>
+	<div class='flexbox_item' id='button'>
 		<a href="/strains/<%= @strain.id %>/edit">
 			<button class='btn'>Edit</button>
 		</a>
-			<form method="post" action="/strains/<%= @strain.id %>">
-				<input class='btn' type="submit" value="Delete">
-					<input name="_method" type="hidden" value='delete' >
-			</form>
+		<form method="post" action="/strains/<%= @strain.id %>">
+			<input class='btn' type="submit" value="Delete">
+				<input name="_method" type="hidden" value='delete' >
+		</form>
 	</div>
+	<div class='flexbox_item' id='strain_img'>
+		<img src="<%= @strain.media %>" height="300px" width="300px"/>
 	</div>
+	<div class='flexbox_item' id='strain_details'>
+		<h2><%= @strain.name %></h2> 
 
+		<h3><%= @strain.kind %></h3>
+	</div>
+	<div class='flexbox_item' id='strain_review'>
+		<h3><%= @strain.rating %></h3>
+		<p><%= @strain.review %></p>
+	</div>
 </div>
 
