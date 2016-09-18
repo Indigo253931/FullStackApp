@@ -8,17 +8,20 @@
 #button {
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
 }
 /**//* *//* *//* *//* *//*  ID FLEX *//* *//* *//* *//* *//* *//* *//* /
 /* index.erb (homepage) */
 #flex_navbar {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 #flex_homepage {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 /* index.erb (strain menu) */
 #flex_menu {
@@ -34,9 +37,8 @@
 /* show.erb * (one strain) */
 #flex_strain_display {
   display: flex;
-    flex-direction: row;
-    flex-wrap: flex-start;
-
+  flex-direction: column;
+  flex-wrap: flex-start;
 }
 #strain_img {
 
@@ -52,6 +54,7 @@
 #flex_form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 #form_input {
 
@@ -63,11 +66,12 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background: url(http://www.genkin.org/gallery/landscapes/beach-ocean-seascapes/northern-beaches-sydney/palm-beach-barrenjoey-0007.jpg);
+  background: linear-gradient(to bottom, #c1e09c 0%,#88bb75 44%,#3b9144 100%);
+  
 }
 .flexbox_item {
-  height: 200px;
-  width: height: 200px;
+  height: 300px;
+  width: 300px;
   margin: 4px;
   color: black;
   line-height: 40px;
@@ -81,13 +85,13 @@
 #flex_navbar {
   height: 100px;
   width: 100%;
-  background: url(/images/palm-beach-barrenjoey-0007.jpg);
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);;
   background-size: cover;
 }
 #nav_item {
   line-height: normal;
-  height: 40px;
-  width: 20px;
+  height: 90px;
+  width: 100px;
 }
 nav {
   /*background: url(/images/charlottes-web-pot-weed-farm-colorado-2.jpg);  
@@ -97,8 +101,8 @@ nav {
 }
 
 .nav_icon {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 h1, h2 {
   font-weight: lighter;
@@ -132,7 +136,7 @@ index.erb (homepage) */
   border: none;
 }
 #about {
-
+  height: 320px;
 }
 #explanation, #about, #features {
   height: 350px;
@@ -207,7 +211,8 @@ index.erb (homepage) */
 font-size: 80px;
 line-height: normal;
 height: 100px;
-width: 100px;
+width: 100%;
+text-align: center;
 }
 #strain_review {
 
@@ -215,17 +220,18 @@ width: 100px;
 
 /* new.erb */ /* edit.erb */
 #flex_form {
-  height: 400px;
-  width: 300px; 
+  height: 500px;
+  width: 100%; 
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #form_input {
-  box-shadow: outset 0 2px 2px rgba(0, 0, 0, 0.2); 
-  font-size: 20px;
+  font-size: 30px;
+
 }
 .btn, .form_input {
     text-align: center;
-    width: 100px;
-    padding: 15px;
+    width: 150px;
+    padding: 10px;
     border-radius: 8px;
 }
 .btn {
@@ -244,6 +250,6 @@ width: 100px;
    background: transparent;
 }
 #button {
-  height: 90px;
-  width: 100px;
+  height: 160px;
+  width: 180px;
 }
