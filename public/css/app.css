@@ -27,7 +27,9 @@
 #flex_menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 #menu_item {
 
@@ -59,7 +61,7 @@
 }
 /**//* *//* *//* *//* *//*  GLOBAL STYLES *//* *//* *//* *//* *//* *//* */
 .flexbox_container {
-  border: 2px solid black;
+  border: 2px solid #eeeeee;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -68,17 +70,17 @@
   
 }
 .flexbox_item {
-  height: 300px;
-  width: 300px;
+/*  height: 300px;
+  width: 300px;*/
   margin: 4px;
-  color: black;
+  color: #045208;
   line-height: 40px;
   /*background-color: rgba(0, 0, 0, 0.5);*/
   background-color: rgba(255, 255, 255, 0.5);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px; 
-  box-shadow:  -6px 7px 6px 0px rgba(50, 50, 50, 0.89);
+  box-shadow: -1px 0px 6px 0px #3b9142;
 }
 #flex_navbar {
   height: 100px;
@@ -86,27 +88,40 @@
   background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);;
   background-size: cover;
 }
+#nav_item:hover {
+  opacity: 1;
+  transition: 1s;
+/*  background: #eeeeee;*/
+}
+
 #nav_item {
   line-height: normal;
   height: 90px;
   width: 100px;
+  opacity: .6;
+  background: transparent;
+  box-shadow: none;
 }
 nav {
   /*background: url(/images/charlottes-web-pot-weed-farm-colorado-2.jpg);  
   */background-size: cover;
   background-repeat: no-repeat;
-  border: 5px solid black;
+  border: 3px #eeeeee;
 }
 
 .nav_icon {
   height: 80px;
   width: 80px;
 }
+body {
+  color: #045208;
+}
 h1, h2 {
   font-weight: lighter;
+  color: #045208;
 }
 h1 {
-    text-shadow: 0 0 5px #000;
+    text-shadow: #eeeeee;
     text-align: center;
 }
 h2 {
@@ -123,8 +138,8 @@ a {
 }
 h2, p, a, li {
     font-size: 30px;
-    color: black;
-    text-shadow: -3px 0px 3px rgba(150, 150, 150, 1);
+   color: #045208;;
+    text-shadow: -3px 0px 3px #eeeeee;
 }
 /**//* *//* *//* *//* *//*  ID STYLES *//* *//* *//* *//* *//* *//* */
 /*
@@ -141,7 +156,7 @@ index.erb (homepage) */
   width: 350px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.5);
-  color: black;
+  color: #045208;;
   text-align: center;
 }
  #menu {
@@ -169,10 +184,7 @@ index.erb (homepage) */
     background-size: 300px 300px;
   }
   #health {
-    background: url(https://d3atagt0rnqk7k.cloudfront.net/wp-content/uploads/2016/05/12001327/7-high-energy-strains-to-help-you-get-active-and-fight-fatigue.jpg);
-    background-size: 300px 300px;
-    height: 300px;
-    width: 300px;
+
   }
   #explore {
     background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQhqQoja0d4v_ucSbtqlvWCYNGpVAxnqSIxrVZYy0n6EHqn15H9g);
@@ -188,14 +200,13 @@ index.erb (homepage) */
 }
 /* index.erb (strain menu) */
 #flex_menu {
+  height: 500px;
 }
 #menu_item {
-  height: 50px;
-  width: 250px;
   text-align: center;
 }
 .strain_id_link {
-  color: black;
+   color: #045208;
   text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 }
 /* show.erb * (one strain) */
@@ -211,6 +222,7 @@ line-height: normal;
 height: 100px;
 width: 100%;
 text-align: center;
+ color: #045208;
 }
 #strain_review {
 
@@ -233,21 +245,24 @@ text-align: center;
     border-radius: 8px;
 }
 .btn {
+  background: url(http://www.iconsdb.com/icons/preview/dark-gray/edit-6-xxl.png);
   color: rgb(99, 110, 181);
   font-size: 25px;
   padding: 5px;
   text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.83);
   border-radius: 90px;
-  background: rgb(172, 204, 255);
+ /* background: rgb(172, 204, 255);
   background: -webkit-linear-gradient(265deg, rgb(172, 204, 255) 30%, rgb(159, 170, 248) 77%);
   background: -o-linear-gradient(265deg, rgb(172, 204, 255) 30%, rgb(159, 170, 248) 77%);
   background: linear-gradient(175deg, rgb(172, 204, 255) 30%, rgb(159, 170, 248) 77%);
-  box-shadow:         0px 1px 4px rgba(0, 30, 214, 1);
+ */ box-shadow:         0px 1px 4px rgba(0, 30, 214, 1);
 }
 #btn {
    background: transparent;
 }
 #button {
-  height: 160px;
-  width: 180px;
+  box-shadow: none;
+}
+.button_form {
+  background: url(http://www.iconsdb.com/icons/preview/dark-gray/edit-6-xxl.png);
 }

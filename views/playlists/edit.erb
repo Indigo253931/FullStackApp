@@ -1,14 +1,14 @@
 <!-- Update Activity -->
 <div class='flexbox_container' id='form'>
-  <div class='flexbox_item form' id='update_activity'>
+  <div class='flexbox_item form' id='update_playlist'>
     <h1>Update</h1>
-    <form action='/activities/<%= "#{@activity.id}" %>' method='post'>
+    <form action='/playlists/<%= "#{@playlist.id}" %>' method='post'>
       <div class='flexbox_item'>
-        <label for="activity[name]">Name:</label>
-          <input class="form_input" name="activity[name]" placeholder='Running' value='<%= "#{@activity.name}" %>'>
+        <label for="playlist[name]">Name:</label>
+          <input class="form_input" name="playlist[name]" placeholder='Running Playlist' value='<%= "#{@playlist.name}" %>'>
       </div>
         <div class='flexbox_item'>
-        <label for="activity[kind]">Kind:</label>
+        <label for="activity[kind]">Artist:</label>
           <input class="form_input" name="activity[kind]" placeholder='Cardio' value='<%= "#{@activity.kind}" %>'>
       </div>
       <div class='flexbox_item'>

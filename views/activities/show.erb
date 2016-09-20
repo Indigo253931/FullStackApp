@@ -1,0 +1,21 @@
+<div class='flexbox_container' id='flex_strain_display'>
+	<div class='flexbox_item' id='activity_details'>
+		<h2><%= @activity.name %></h2> 
+
+		<h3><%= @activity.kind %></h3>
+		<h4><%= @strain.media %></h4>
+	</div>
+	<div class='flexbox_item' id='strain_img'>
+		<img src="<%= @activity.media %>" height="300px" width="300px"/>
+	</div>
+	<div class='flexbox_item' id='button'>
+		<a href="/activities/<%= @activity.id %>/edit">
+			<button class='btn'>Edit</button>
+		</a>
+		<form method="post" action="/activities/<%= @activity.id %>" class='button_form'>
+			<input class='btn' type="submit" value="Delete">
+				<input name="_method" type="hidden" value='delete' >
+		</form>
+	</div>
+</div>
+

@@ -3,19 +3,17 @@
 		<h2><%= @strain.name %></h2> 
 
 		<h3><%= @strain.kind %></h3>
+		<h4><%= @strain.rating %></h4>
+		<p><%= @strain.review %></p>
 	</div>
 	<div class='flexbox_item' id='strain_img'>
 		<img src="<%= @strain.media %>" height="300px" width="300px"/>
-	</div>
-	<div class='flexbox_item' id='strain_review'>
-		<h3><%= @strain.rating %></h3>
-		<p><%= @strain.review %></p>
 	</div>
 	<div class='flexbox_item' id='button'>
 		<a href="/strains/<%= @strain.id %>/edit">
 			<button class='btn'>Edit</button>
 		</a>
-		<form method="post" action="/strains/<%= @strain.id %>">
+		<form method="post" action="/strains/<%= @strain.id %>" class='button_form'>
 			<input class='btn' type="submit" value="Delete">
 				<input name="_method" type="hidden" value='delete' >
 		</form>

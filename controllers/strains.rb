@@ -1,7 +1,7 @@
  class CannaViews < Sinatra::Base
 use Rack::MethodOverride
 
-# General route action
+# Root and layout routes
  get '/' do 
  	erb :index
  end
@@ -10,31 +10,17 @@ get '/layout' do
  	erb :layout
  end
 
+get '/about' do 
+ 	erb :about
+ end
+
  # RESTful Strain Controller Actions
 
 # INDEX
  get '/strains' do 
- 	@strains = Strain.all 
- 	erb(:"strains/index")
+	@strains = Strain.all
+ 	erb(:"strain/index")
  end
-# Access db data using queries  
-	# Return a collection with all strains
-		#strains = Strain.all
-	# Return first strain
-		# strains = Strain.first
-	# Return first strain named Kush 
-		# strains = find_by(name: 'Kush')
-	# Find all strains named Kush that are Indicas 
-	# and search by created_at in reverse chronological order
-		# strains = Strain.where(name: 'Kush', kind: 'Indica').order(created_at: :desc)
-
-# # Search
-# get '/search' do 
-# 	@strains = 'all'
-# 	@name = params[:search]
-# 	@strains = Strain.where("name LIKE ?", "%#{@name}%").order(:name)
-# 	erb(":strain/index")
-# 	end
  
  # NEW 
  get '/strains/new' do
@@ -53,18 +39,6 @@ get '/layout' do
  		erb(:"strains/new")
  	end  	
  end
-# AR objects can be created from a hash, 
-# a block or have their attributes manually set after creation.
-
-	# Calling Strain.new will instantiate a new object
-	# Strain.save will commit the record to the db.
-
-	# # In one step, calling the create method 
-	# will create and save a new record into the db
-
-		# StrwNghtmre = Strain.create(name: "Strawberryy Nightmare", rating: "4", 
-		# review: "Best for daytime use, a favorite fruity strain")
-
  # SHOW
  get '/strains/:id' do 
  	@strain = Strain.find(params[:id])
@@ -86,21 +60,6 @@ else
 	erb(:"strains/edit")
 end
 end
-# Once retrieved, the attributes on an AR object 
-# can be modified and saved to the db by
-
-	# using Strain.find_by(name: 'Kush')
-	# Strain.name = ('Blackberry Kush')
-	# Strain.save
-
-	# Or shorthand hash mapping attributes to desired value, 
-	# allowing you to update several attributes at once
-		# strain = Strain.find_by(name: 'Kush')
-		# Strain.update(name: 'Blackberry Kush')
-
-	# To update several records in bulk, use
-		# Strain.update_all ''
-
 # DELETE
 delete '/strains/:id' do 
 	@strain = Strain.find(params[:id])
@@ -117,6 +76,44 @@ end
 	#strain.delete
 end
 
+# Access db data using queries  
+	# Return a collection with all strains
+		#strains = Strain.all
+	# Return first strain
+		# strains = Strain.first
+	# Return first strain named Kush 
+		# strains = find_by(name: 'Kush')
+	# Find all strains named Kush that are Indicas 
+	# and search by created_at in reverse chronological order
+		# strains = Strain.where(name: 'Kush', kind: 'Indica').order(created_at: :desc)
+
+# AR objects can be created from a hash, 
+# a block or have their attributes manually set after creation.
+
+	# Calling Strain.new will instantiate a new object
+	# Strain.save will commit the record to the db.
+
+	# # In one step, calling the create method 
+	# will create and save a new record into the db
+
+		# StrwNghtmre = Strain.create(name: "Strawberryy Nightmare", rating: "4", 
+		# review: "Best for daytime use, a favorite fruity strain")
+
+
+# Once retrieved, the attributes on an AR object 
+# can be modified and saved to the db by
+
+	# using Strain.find_by(name: 'Kush')
+	# Strain.name = ('Blackberry Kush')
+	# Strain.save
+
+	# Or shorthand hash mapping attributes to desired value, 
+	# allowing you to update several attributes at once
+		# strain = Strain.find_by(name: 'Kush')
+		# Strain.update(name: 'Blackberry Kush')
+
+	# To update several records in bulk, use
+		# Strain.update_all ''
 
 
 # Strain Controller (change name to strains.rb)

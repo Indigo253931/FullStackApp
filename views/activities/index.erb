@@ -1,6 +1,6 @@
-<div class='flex_parent_container' id='activity_menu'>
+<div class='flexbox_container' id='activity_menu'>
   <% @activities.each do |activity| %>
-      <div class='flex_child_item' id='activity_menu_item'>
+      <div class='flexbox_item' id='activity_menu_item'>
         <a href="/activities/<%= activity.id %>" class='activity_id_link'><%= activity.name %>
         </a>
       </div>
