@@ -1,5 +1,8 @@
 class CannaViews < Sinatra::Base
 	use Rack::MethodOverride
+ 
+
+puts "activities"
 # General route action
  get '/' do 
  	erb :index
@@ -11,7 +14,9 @@ get '/layout' do
 # INDEX
  get '/activities' do 
  	@activities=Activity.all 
+ 	puts @activities
  	erb(:"activities/index")
+ 
  end
  # NEW 
  get '/activities/new' do

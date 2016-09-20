@@ -1,9 +1,8 @@
 # Model Naming Convention: 
 	# Singular, capitalize first letter of each word
 class Strain < ActiveRecord::Base
- 	
+ 	belongs_to :activities
  end
-
 # Strain model maps to the strains table in the db. 
 # You have the ability to map the columns of each row in that table 
 # with the attributes of the instances of the Strain model. 

@@ -2,12 +2,15 @@
  require 'bundler'
  Bundler.require
 
+require './app'
+
 # Model
  require './models/strains'
+ require './models/activities'
 
 # Controllers
 require './controllers/strains.rb'
-require './app'
+require './controllers/activities.rb'
 
 
 

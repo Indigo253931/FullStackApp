@@ -11,10 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160721195109) do
+ActiveRecord::Schema.define(version: 20160920213256) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "activities", force: :cascade do |t|
+    t.string "name"
+    t.string "kind"
+    t.string "media"
+  end
 
   create_table "ar_internal_metadata", primary_key: "key", force: :cascade do |t|
     t.string   "value"
@@ -25,9 +31,14 @@ ActiveRecord::Schema.define(version: 20160721195109) do
   create_table "strains", force: :cascade do |t|
     t.string  "name"
     t.string  "kind"
+    t.string  "rating"
     t.string  "review"
-    t.integer "rating"
     t.string  "media"
+    t.string  "strain_data"
+    t.string  "pos_attributes"
+    t.string  "neg_attributes"
+    t.string  "medical"
+    t.integer "activity_id"
   end
 
 end
