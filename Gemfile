@@ -1,5 +1,6 @@
  source "https://rubygems.org" 
  # Tells app where to get gems
+ruby "2.2.5"
 
  gem "sinatra", '~>1.4.6' 
   # Allows you to use and run Sinatra record
