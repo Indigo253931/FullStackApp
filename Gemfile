@@ -22,5 +22,3 @@ ruby "2.2.5"
  
  gem 'rerun'
  # Ruby version of nodemon
- 
- gem 'sass-rails'
