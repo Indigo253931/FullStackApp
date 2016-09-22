@@ -1,0 +1,23 @@
+<div class='flexbox_container' id='flex_user_profile'>
+	<div class='flexbox_item' id='profile_details'>
+	  <% @user.each do |user| %>
+      <div class='flexbox_item'>
+       <%= user.username %>
+      </div>
+    <% end %>
+		<h2><%= @user.username %></h2> 
+		<h4><%= @user.media %></h4>
+	</div>
+	<div class='flexbox_item' id='user_img'>
+		<img src="<%= @user.media %>" height="300px" width="300px"/>
+	</div>
+	<div class='flexbox_item' id='button'>
+		<a href="/users/<%= @user.id %>/edit">
+			<button class='btn'>Edit</button>
+		</a>
+		<form method="post" action="/users/<%= @user.id %>" class='button_form'>
+			<input class='btn' type="submit" value="Delete">
+				<input name="_method" type="hidden" value='delete' >
+		</form>
+	</div>
+</div>

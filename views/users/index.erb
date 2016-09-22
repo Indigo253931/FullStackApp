@@ -1,0 +1,12 @@
+	<div class='flexbox_item' id='review'>
+		<a href="/strains/new">Share Experiences</a>
+	</div>
+	<div class='flexbox_container'>
+  <% @users.each do |user| %>
+      <div class='flexbox_item'>
+        <a href="/users/<%= user.id %>" class='user_id_link'><%= user.username %>
+        </a>
+      </div>
+    <% end %>
+</div>  
+

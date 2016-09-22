@@ -1,15 +1,11 @@
 <div class='flexbox_container' id='flex_strain_display'>
 	<div class='flexbox_item' id='strain_details'>
 		<h2><%= @strain.name %></h2> 
-
-		<h3><%= @strain.kind %></h3>
-		<h4><%= @strain.rating %></h4>
+		<h2><%= @strain.kind %></h2>
+		<h2><%= @strain.rating %></h2>
 		<p><%= @strain.review %></p>
-	</div>
-	<div class='flexbox_item' id='strain_img'>
 		<img src="<%= @strain.media %>" height="300px" width="300px"/>
-	</div>
-	<div class='flexbox_item' id='button'>
+		<div class='flexbox_item' id='button'>
 		<a href="/strains/<%= @strain.id %>/edit">
 			<button class='btn'>Edit</button>
 		</a>
@@ -18,5 +14,5 @@
 				<input name="_method" type="hidden" value='delete' >
 		</form>
 	</div>
+	</div>
 </div>
-

@@ -1,0 +1,11 @@
+<!-- Update Activity -->
+<div class='flexbox_container' id='form'>
+  <div class='flexbox_item form' id='update_user'>
+    <h1>Update</h1>
+    <form action='/users/<%= "#{@user.id}" %>' method='post'>
+      <div class='flexbox_item'>
+        <label for="user[username]">Username:</label>
+          <input class="form_input" name="user[username]" placeholder='SativaBonita' value='<%= "#{@user.username}" %>'>
+      </div>
+    </form>
+</div>

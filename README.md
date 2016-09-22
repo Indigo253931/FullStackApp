@@ -1,3 +1,10 @@
+* bundle exec
+* config.ru
+* rake db:create_migration NAME=<your_migration_name>
+
+
+
+
 Ideas for features, layout and design
 
 -search bar
