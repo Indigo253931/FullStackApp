@@ -1,11 +1,30 @@
-<!-- Update Activity -->
-<div class='flexbox_container' id='form'>
-  <div class='flexbox_item form' id='update_user'>
-    <h1>Update</h1>
-    <form action='/users/<%= "#{@user.id}" %>' method='post'>
-      <div class='flexbox_item'>
-        <label for="user[username]">Username:</label>
-          <input class="form_input" name="user[username]" placeholder='SativaBonita' value='<%= "#{@user.username}" %>'>
-      </div>
-    </form>
+<!-- Update User -->
+<div class='flexbox_container' id='flex_form'>
+  <div class='flexbox_item' id='form_input'>
+  <h1>Update</h1>
+   <form action='/users/<%= "#{@user.id}" %>' method='post'>
+    <label for="user[username]">Username:</label>
+         <input class="form_input" name="user[username]" placeholder='Username' value='<%= "#{@user.username}" %>'>
+  </div>
+  <div class='flexbox_item' id='form_input'>
+    <label for="user[email]">Email:</label>
+        <input class="form_input" name="user[email]" placeholder='email' value='<%= "#{@user.email}" %>'>
+  </div>
+  <div class='flexbox_item' id='form_input'>
+    <label for="user[password]">Password:</label>
+        <input class="form_input" name="user[password]" placeholder='password' value='<%= "#{@user.password}" %>'>
+  </div>
+  <div class='flexbox_item' id='form_input'>
+    <label for="user[location]">Location:</label>
+          <input class="form_input" name="user[location]" placeholder='Denver, CO' value='<%= "#{@user.location}" %>'>
+  </div>
+  <div class='flexbox_item' id='form_input'>
+      <label for="user[avatar]">Avatar:</label>
+        <input class="form_input" name="user[avatar]" placeholder='image' value='<%= "#{@user.avatar}" %>'>
+  </div>
+  <div class='flexbox_item' id='button'>
+    <input class='btn' type="submit" value="Save">
+      <input name="_method" type="hidden" value='put' />
+  </div>
+</form>
 </div>

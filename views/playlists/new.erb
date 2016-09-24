@@ -1,12 +1,31 @@
 <!-- Create a strain -->
 <div class='flexbox_container' id='flex_form'>
-	<div class='flexbox_item' id='full_form'>
-	  <div class='flexbox_item' id='form_input'>
-	  <h2>Create a playlist</h2>
-	    <form action="/playlists" method="post">
-	      <label for="playlist[name]" class='form_label'>Playlist:</label>
-	        <input class='form_input' name="playlist[name]" placeholder="Indicas" />
-	  </div>
-	  </form>
-	</div>
+ <div class='flexbox_item' id='form_background'>
+  <div class='flexbox_item' id='form_input'>
+  <h2>Share a Strain Review</h2>
+    <form action="/strains" method="post">
+      <label for="strain[name]" class='form_label'>Name:</label>
+        <input class='form_input' name="strain[name]" placeholder="Maui Waui" />
+  </div>
+  <div class='flexbox_item' id='form_input'>
+    <label for="strain[rating]" class='form_label'>Rating:</label>
+      <input class='form_input' name="strain[rating]" placeholder="4.5" />
+  </div>
+  <div class='flexbox_item' id='form_input'>
+    <label for="strain[kind]" class='form_label'>Kind:</label>
+      <input class='form_input' name="strain[kind]" placeholder="Hybrid" />
+      </div>
+  <div class='flexbox_item' id='form_input'>        
+    <label for="strain[review]" class='form_label'>Review:</label>
+      <input class='form_input' name="strain[review]" placeholder="Top quality" />
+  </div>
+  <div class='flexbox_item' id='form_input'>
+    <label for="strain[media]" class='form_label'>Image:</label>
+      <input class="form_input" name="strain[media]" placeholder="Image URL" value='<%= "#{@strain.media}" %>' />
+  </div>
+  <div class='flexbox_item' id='button'>
+    <input class='form_input' type="submit" value="Create" />
+  </div>
+  </form>
+  </div>
 </div>

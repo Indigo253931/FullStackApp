@@ -2,7 +2,6 @@ class CannaViews < Sinatra::Base
 	use Rack::MethodOverride
  
 
-puts "activities"
 # General route action
  get '/' do 
  	erb :index

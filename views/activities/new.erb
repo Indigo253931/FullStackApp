@@ -1,16 +1,17 @@
 <!-- Create an activity -->
-<div class='flexbox_container' id='form'>
+<div class='flexbox_container' id='flex_form'>
+<div class='flexbox_item' id='form_background'>
   <h2>New Activity</h2>
     <form action="/activites" method="post">
-      <div class='flexbox_item' id='new_activity_name'>
+      <div class='flexbox_item' id='form_input'>
         <label for="activity[name]" class='form_label'>Name:</label>
           <input class='form_input' name="activity[name]" placeholder="Surfing">
       </div>
-      <div class='flexbox_item'>
+      <div class='flexbox_item' id='form_input'>
         <label for="activity[kind]" class='form_label'>Kind:</label>
           <input class="form_input" name="activity[kind]" placeholder="Cardio" value='<%= "#{@activity.kind}" %>'>
       </div>
-      <div class='flexbox_item'>
+      <div class='flexbox_item' id='form_input'>
         <label for="activity[media]" class='form_label'>Image:</label>
           <input class="form_input" name="activity[media]" placeholder="Image URL" value='<%= "#{@activity.media}" %>'>
       </div>
@@ -18,4 +19,5 @@
             <input class='form_input' type="submit" value="Create">
       </div>
     </form>
+  </div>
 </div>

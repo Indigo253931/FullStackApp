@@ -1,10 +1,15 @@
-	<div class='flexbox_item' id='review'>
-		<a href="/strains/new">Share Experiences</a>
-	</div>
+<div>
+	<%= session[:id] %>
+	puts 'users'
+</div>
+
+
 	<div class='flexbox_container'>
   <% @users.each do |user| %>
       <div class='flexbox_item'>
         <a href="/users/<%= user.id %>" class='user_id_link'><%= user.username %>
+        <%= user.location %>
+        <%= user.avatar %>
         </a>
       </div>
     <% end %>

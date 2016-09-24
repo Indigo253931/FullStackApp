@@ -11,14 +11,13 @@ use Rack::MethodOverride
  
  # NEW 
  get '/playlists/new' do
- 	@playlists = Playlist.new
+ 	@playlist = Playlist.new
  	erb(:"playlists/new")
  end
 
  # CREATE 
-
- post '/playlists/new' do 
- 	@playlists = Playlist.new(params[:playlist])
+ post '/playlists' do 
+ 	@playlist = Playlist.new(params[:playlist])
  	if @playlist.save
  		redirect("/playlists/#{@playlist.id}")
  	else

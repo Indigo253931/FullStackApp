@@ -1,26 +1,31 @@
 <!-- Create an activity -->
-<div class='flexbox_container' id='form'>
+<div class='flexbox_container' id='flex_form'>
+<div class='flexbox_item' id='form_background'>
   <h2>Sign Up</h2>
     <form action="/users" method="post">
-      <div class='flexbox_item' id='new_user_username'>
+      <div class='flexbox_item' id='form_input'>
         <label for="user[username]" class='form_label'>Username:</label>
-          <input class='form_input' name="user[username]" placeholder="SativaBonita">
+          <input class='form_input' name="user[username]" placeholder="username">
       </div>
-      <div class='flexbox_item' id='new_user_email'>
+      <div class='flexbox_item' id='form_input'>
         <label for="user[email]" class='form_label'>Email:</label>
-          <input class='form_input' name="user[email]" placeholder="SativaBonita@gmail.com">
+          <input class='form_input' name="user[email]" placeholder="email@gmail.com">
       </div>
-      <div class='flexbox_item' id='new_user_password'>
+      <div class='flexbox_item' id='form_input'>
         <label for="user[password]" class='form_label'>Password:</label>
           <input class='form_input' name="user[password]" placeholder="password">
       </div>
-      <div class='flexbox_item' id='new_user_location'>
+      <div class='flexbox_item' id='form_input'>
         <label for="user[location]" class='form_label'>Location:</label>
           <input class='form_input' name="user[location]" placeholder="Denver, CO">
       </div>
-      <div class='flexbox_item' id='new_user_avatar'>
-        <label for="user[media]" class='form_label'>Avatar:</label>
-          <input class='form_input' name="user[media]" placeholder="Denver, CO">
+      <div class='flexbox_item' id='form_input'>
+        <label for="user[avatar]" class='form_label'>Avatar:</label>
+          <input class='form_input' name="user[avatar]" placeholder="Your face">
       </div>
+      <div class='flexbox_item' id='button'>
+    <input class='form_input' type="submit" value="Sign Up" />
+  </div>
     </form>
+  </div>
 </div>

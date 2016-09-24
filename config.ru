@@ -1,6 +1,9 @@
  require 'rubygems'
  require 'bundler'
+ require 'sinatra'
+ enable :sessions
  Bundler.require
+
 
 require './app'
 

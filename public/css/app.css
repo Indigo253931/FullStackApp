@@ -115,6 +115,9 @@ nav {
   height: 80px;
   width: 80px;
 }
+* {
+  text-align: center;
+}
 body {
   color: #343534;
 }
@@ -241,8 +244,7 @@ text-align: center;
   line-height: 55px;
 }
 .btn {
-      text-align: center;
-    width: 10%;
+    text-align: center;
     padding: 10px;
     border-radius: 8px;
     font-size: 20px;

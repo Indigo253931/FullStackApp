@@ -2,19 +2,16 @@
 	<div class='flexbox_item' id='activity_details'>
 	  <% @activity.strains.each do |strain| %>
       <div class='flexbox_item' id='activity_menu_item'>
-       <%= strain.name %>
+        <a href="/strains/<%= strain.id %>" class='strain_id_link'><%= strain.name %>
+        </a>
       </div>
     <% end %>
 
 		<h2><%= @activity.name %></h2> 
 
 		<h3><%= @activity.kind %></h3>
-		<h4><%= @activity.media %></h4>
-	</div>
-	<div class='flexbox_item' id='strain_img'>
-		<img src="<%= @activity.media %>" height="300px" width="300px"/>
-	</div>
-	<div class='flexbox_item' id='button'>
+			<img src="<%= @activity.media %>" height="300px" width="300px"/>
+				<div class='flexbox_item' id='button'>
 		<a href="/activities/<%= @activity.id %>/edit">
 			<button class='btn'>Edit</button>
 		</a>
@@ -23,5 +20,6 @@
 				<input name="_method" type="hidden" value='delete' >
 		</form>
 	</div>
+
 </div>
 

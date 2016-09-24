@@ -16,10 +16,10 @@ use Rack::MethodOverride
  end
 
  # CREATE 
-
  post '/users' do 
  	@user = User.new(params[:user])
  	if @user.save
+ 		session[:id] = @user[:id]
  		redirect("/users/#{@user.id}")
  	else
  		erb(:"users/new")
@@ -28,8 +28,13 @@ use Rack::MethodOverride
  # SHOW
  get '/users/:id' do 
  	@user = User.find(params[:id])
- 	erb(:"users/show")
+ 	if
+ 		session[:id] != @user[:id] 
+ 		redirect ("/users")
+ else 
+	erb(:"users/new")
  end
+end
 
  # EDIT
 get '/users/:id/edit' do

@@ -1,13 +1,17 @@
-<div class="center">
-  <span id="album"><img src="http://eil.com/images/main/Gallows+-+In+The+Belly+Of+A+Shark+-+7%22+RECORD-413915.jpg" /></span>
-  <span id="content">
-    <div class="row">DAN MUMFORD - IN THE BELLY OF A SHARK</div>
-    <div class="row" id="lift">
-      <span id="play">&#9658;</span>
-      <span id="progress">_</span>
-      <span id="total">_</span>
-      <span id="time">01:24</span>
-    </div>
-    <div class="row"><img id="speaker" src="http://accurate-voting.org/wp-content/uploads/2010/03/200px-Speaker_Icon_gray-sm.png" /></div>
-  </span>
+<div class='flexbox_container' id='flex_strain_display'>
+  <div class='flexbox_item' id='strain_details'>
+    <h2><%= @playlist.name %></h2> 
+    <h2><%= @playlist.artist %></h2>
+    <h2><%= @splaylist.album %></h2>
+    <p><%= @playlist.song %></p>
+    <div class='flexbox_item' id='button'>
+    <a href="/playlists/<%= @playlist.id %>/edit">
+      <button class='btn'>Edit</button>
+    </a>
+    <form method="post" action="/playlists/<%= @[playlist].id %>" class='button_form'>
+      <input class='btn' type="submit" value="Delete">
+        <input name="_method" type="hidden" value='delete' >
+    </form>
+  </div>
+  </div>
 </div>
